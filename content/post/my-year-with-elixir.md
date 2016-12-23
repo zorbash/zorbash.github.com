@@ -154,6 +154,8 @@ pattern matching seems like the natural way to adapt from math to programming.
 * Blog about [Kitto][kitto] (stay tuned)
 * Release a project I'm working on these days (hint: CI for packages), built with Phoenix
 
+Feel free to make reading suggestions and comments on the [reddit post](https://www.reddit.com/r/elixir/comments/5jwxuc/my_year_with_elixir/).
+
 [analytics-blogpost]: https://engineering.skroutz.gr/blog/skroutz-analytics/
 [goliath]: https://engineering.skroutz.gr/blog/skroutz-analytics/
 [kitto]: https://github.com/kittoframework/kitto
