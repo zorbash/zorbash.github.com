@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dimitris Zorbas |&gt; code</title>
+    <link>/index.xml</link>
+    <description>Recent content on Dimitris Zorbas |&gt; code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My year with Elixir</title>
+      <link>/post/my-year-with-elixir/</link>
+      <pubDate>Thu, 22 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/my-year-with-elixir/</guid>
+      <description>
+
+&lt;p&gt;I started fiddling with Elixir about 1.5 year ago and today I feel like
+sharing my experience with the language.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been coding with Ruby for the past 5 years (mostly around the Rails
+ecosystem) and I try to learn a new programming language every year.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;2016 is definitely the year of Elixir for me.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;why-elixir&#34;&gt;Why Elixir&lt;/h1&gt;
+
+&lt;p&gt;My first experience with Elixir came when at &lt;a href=&#34;http://skroutz.gr&#34;&gt;work&lt;/a&gt; my team was
+looking for looking for a web application framework to receive enormous
+loads of Analytics traffic (see related &lt;a href=&#34;https://engineering.skroutz.gr/blog/skroutz-analytics/&#34;&gt;analytics-blogpost&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;We investigated many options in nodejs, Erlang, Clojure and Ruby.
+We ended up using &lt;a href=&#34;https://engineering.skroutz.gr/blog/skroutz-analytics/&#34;&gt;goliath&lt;/a&gt;, which is an &lt;a href=&#34;https://github.com/eventmachine/eventmachine&#34;&gt;Event-Machine&lt;/a&gt; based web server
+framework in Ruby for team productivity reasons.&lt;/p&gt;
+
+&lt;p&gt;Upon considering Erlang and &lt;a href=&#34;https://github.com/postrank-labs/goliath&#34;&gt;Chicago Boss&lt;/a&gt;, I also
+found out about Elixir and Phoenix (which was just released at the time) and both caught my eye.&lt;/p&gt;
+
+&lt;h2 id=&#34;first-thoughs&#34;&gt;First Thoughs&lt;/h2&gt;
+
+&lt;p&gt;The first things that came to my mind, initially fiddling with Elixir were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Oh it looks a lot like Ruby, neat!&lt;/li&gt;
+&lt;li&gt;How can I define a class? What do you mean there are no classes here?!&lt;/li&gt;
+&lt;li&gt;Does everything have to be so explicit? Why do I have to alias all the things?&lt;/li&gt;
+&lt;li&gt;The REPL (iex) does not keep history? Are you kidding me?&lt;/li&gt;
+&lt;li&gt;Seems like a trap for rubyists to adapt to functional programming practices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So why did I invest my time trying to master it?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;a href=&#34;https://github.com/josevalim&#34;&gt;José Valim&lt;/a&gt; has made tremendous efforts in organising and maintaining a healthy
+community around the language.&lt;/p&gt;
+
+&lt;p&gt;A lot of renowned rubyists have acknowledged the struggle to mend the things ruby is bad at.
+&lt;a href=&#34;https://github.com/josevalim&#34;&gt;José&lt;/a&gt; has created an evolved ruby, a new language, which is so new yet
+already mature and practical.&lt;/p&gt;
+
+&lt;p&gt;I bet on the future of Elixir not only because of the features but
+because I can see others share the same enthusiasm as mine, cooperating
+in harmony on open-source projects of the ecosystems, being nice to each
+other. The github repo of the language already has almost 500
+contributors, that&amp;rsquo;s incredible.&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m pretty sure others have covered the features of the language in
+great detail, so I&amp;rsquo;ll be brief.&lt;/p&gt;
+
+&lt;p&gt;Elixir runs on the Erlang VM and integrates beautifully with &lt;a href=&#34;https://github.com/erlang/otp&#34;&gt;OTP&lt;/a&gt;
+which is trusted by many companies to build resilient, performant, distributed applications.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s an expressive language, easily extensible using hygienic &lt;a href=&#34;http://elixir-lang.org/getting-started/meta/macros.html&#34;&gt;macros&lt;/a&gt;.
+Defining a parallel map function is as simple as:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;defmodule&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Parallel&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;do&lt;/span&gt;
+  &lt;span style=&#34;color: #66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;pmap(collection,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;func)&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;do&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;collection&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;|&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Enum&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;map(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;Task&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;async(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;func&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;amp;1)&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)))&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;|&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Enum&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;map(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;Task&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;await&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;(snippet taken from &lt;a href=&#34;http://elixir-recipes.github.io&#34;&gt;elixir-recipes&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Elixir focuses on the points where Ruby arguably is lacking more, having a homey
+syntax for rubyists (compared to Erlang).&lt;/p&gt;
+
+&lt;p&gt;I also find it important that Elixir ships with a build tool (Mix), a
+testing framework (ExUnit) and offers intuitive &lt;a href=&#34;http://elixir-lang.org/getting-started/erlang-libraries.html&#34;&gt;interoperability&lt;/a&gt; with Erlang.&lt;/p&gt;
+
+&lt;h2 id=&#34;community&#34;&gt;Community&lt;/h2&gt;
+
+&lt;p&gt;The community is amazing. We call ourselves alchemists and I really like
+the mystery vibes around the name.&lt;/p&gt;
+
+&lt;h3 id=&#34;elixir-hubs&#34;&gt;Elixir Hubs&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://elixirforum.com/&#34;&gt;https://elixirforum.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/elixir/&#34;&gt;https://www.reddit.com/r/elixir/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://elixir-lang.slack.com/&#34;&gt;http://elixir-lang.slack.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On all the above platforms I found members to be responsive to
+questions, nice and talkative. The community seems to be blooming, slack
+has already more than 11.000 members with ~1000 of them active at any time.&lt;/p&gt;
+
+&lt;h2 id=&#34;pattern-matching&#34;&gt;Pattern Matching&lt;/h2&gt;
+
+&lt;p&gt;Elixir makes pattern matching more approachable.&lt;/p&gt;
+
+&lt;p&gt;As stated in &lt;a href=&#34;https://www.amazon.com/dp/0134841972&#34;&gt;Introduction to Functional Programming (1992)&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Pattern matching is one of the cornerstones of an equational style of
+definition; more often than not it leads to a cleaner and more readily understandable
+definition than a style based on conditional equations.
+(&amp;hellip;) it also simplifies the process of reasoning formally about functions.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Since most people are familiar with equational style of definition from math,
+pattern matching seems like the natural way to adapt from math to programming.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-progress-so-far&#34;&gt;My Progress so far&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I solved some adventofcode exercises using Elixir to become more familiar&lt;/li&gt;
+&lt;li&gt;I read &lt;a href=&#34;https://www.goodreads.com/book/show/18194084-introducing-elixir&#34;&gt;Introducing Elixir&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I wrote an API client for work &lt;a href=&#34;https://github.com/skroutz/skroutz.ex&#34;&gt;skroutz.ex&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Talked about Elixir at &lt;a href=&#34;https://www.meetup.com/Athens-Ruby-Meetup/&#34;&gt;Athens Ruby Meetup&lt;/a&gt; (&lt;a href=&#34;https://speakerdeck.com/zorbash/lets-talk-about-elixir&#34;&gt;presentation&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;I read &lt;a href=&#34;https://www.goodreads.com/book/show/17971957-programming-elixir&#34;&gt;Programming Elixir&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I created and maintain &lt;a href=&#34;https://github.com/kittoframework/kitto&#34;&gt;Kitto&lt;/a&gt; and open-source framework to create dashboards&lt;/li&gt;
+&lt;li&gt;I read &lt;a href=&#34;https://www.goodreads.com/book/show/20524444-elixir-in-action&#34;&gt;Elixir in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I read &lt;a href=&#34;https://www.goodreads.com/book/show/20524444-elixir-in-action&#34;&gt;Metaprogramming Elixir&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I read &lt;a href=&#34;https://www.goodreads.com/book/show/808815.Concurrent_Programming_ERLANG&#34;&gt;Concurrent Programming in
+ERLANG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I read &lt;a href=&#34;https://www.goodreads.com/book/show/26871792-programming-phoenix&#34;&gt;programming phoenix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Currently reading &lt;a href=&#34;https://www.goodreads.com/book/show/25563811-the-little-elixir-otp-guidebook&#34;&gt;The Little Elixir &amp;amp; OTP Guidebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dive in deeper in OTP and read more Erlang books&lt;/li&gt;
+&lt;li&gt;Give &lt;a href=&#34;https://github.com/elixir-lang/gen_stage&#34;&gt;GenStage&lt;/a&gt; a try&lt;/li&gt;
+&lt;li&gt;Improve and extend &lt;a href=&#34;https://github.com/kittoframework/kitto&#34;&gt;Kitto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog about &lt;a href=&#34;https://github.com/kittoframework/kitto&#34;&gt;Kitto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release a project I&amp;rsquo;m working on these days (codename: sourcery), built with Phoenix&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

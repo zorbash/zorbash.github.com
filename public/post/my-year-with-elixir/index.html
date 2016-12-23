@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="My year with Elixir"/>
+<meta name="twitter:description" content="I started fiddling with Elixir about 1.5 year ago and today I feel like sharing my experience with the language.
+I&rsquo;ve been coding with Ruby for the past 5 years (mostly around the Rails ecosystem) and I try to learn a new programming language every year.
+ 2016 is definitely the year of Elixir for me.
+ Why Elixir My first experience with Elixir came when at work my team was looking for looking for a web application framework to receive enormous loads of Analytics traffic (see related analytics-blogpost)."/>
+
+
+
+  	<meta property="og:title" content=" My year with Elixir &middot;  Dimitris Zorbas |&gt; code" />
+  	<meta property="og:site_name" content="Dimitris Zorbas |&gt; code" />
+  	<meta property="og:url" content="/post/my-year-with-elixir/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-12-22T00:00:00Z" />
+
+    
+    
+
+    <title>
+       My year with Elixir &middot;  Dimitris Zorbas |&gt; code
+    </title>
+
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+	  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="index.xml" rel="alternate" type="application/rss+xml" title="Dimitris Zorbas |&gt; code" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.18" />
+
+    <link rel="canonical" href="/post/my-year-with-elixir/" />
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+  
+      <a class="menu-button icon-feed" href="index.xml">&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">My year with Elixir</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-12-22T00:00:00Z">
+            Dec 22, 2016
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>I started fiddling with Elixir about 1.5 year ago and today I feel like
+sharing my experience with the language.</p>
+
+<p>I&rsquo;ve been coding with Ruby for the past 5 years (mostly around the Rails
+ecosystem) and I try to learn a new programming language every year.</p>
+
+<blockquote>
+<p>2016 is definitely the year of Elixir for me.</p>
+</blockquote>
+
+<h1 id="why-elixir">Why Elixir</h1>
+
+<p>My first experience with Elixir came when at <a href="http://skroutz.gr">work</a> my team was
+looking for looking for a web application framework to receive enormous
+loads of Analytics traffic (see related <a href="https://engineering.skroutz.gr/blog/skroutz-analytics/">analytics-blogpost</a>).</p>
+
+<p>We investigated many options in nodejs, Erlang, Clojure and Ruby.
+We ended up using <a href="https://engineering.skroutz.gr/blog/skroutz-analytics/">goliath</a>, which is an <a href="https://github.com/eventmachine/eventmachine">Event-Machine</a> based web server
+framework in Ruby for team productivity reasons.</p>
+
+<p>Upon considering Erlang and <a href="https://github.com/postrank-labs/goliath">Chicago Boss</a>, I also
+found out about Elixir and Phoenix (which was just released at the time) and both caught my eye.</p>
+
+<h2 id="first-thoughs">First Thoughs</h2>
+
+<p>The first things that came to my mind, initially fiddling with Elixir were:</p>
+
+<ul>
+<li>Oh it looks a lot like Ruby, neat!</li>
+<li>How can I define a class? What do you mean there are no classes here?!</li>
+<li>Does everything have to be so explicit? Why do I have to alias all the things?</li>
+<li>The REPL (iex) does not keep history? Are you kidding me?</li>
+<li>Seems like a trap for rubyists to adapt to functional programming practices</li>
+</ul>
+
+<p>So why did I invest my time trying to master it?</p>
+
+<p>Well, <a href="https://github.com/josevalim">José Valim</a> has made tremendous efforts in organising and maintaining a healthy
+community around the language.</p>
+
+<p>A lot of renowned rubyists have acknowledged the struggle to mend the things ruby is bad at.
+<a href="https://github.com/josevalim">José</a> has created an evolved ruby, a new language, which is so new yet
+already mature and practical.</p>
+
+<p>I bet on the future of Elixir not only because of the features but
+because I can see others share the same enthusiasm as mine, cooperating
+in harmony on open-source projects of the ecosystems, being nice to each
+other. The github repo of the language already has almost 500
+contributors, that&rsquo;s incredible.</p>
+
+<h2 id="features">Features</h2>
+
+<p>I&rsquo;m pretty sure others have covered the features of the language in
+great detail, so I&rsquo;ll be brief.</p>
+
+<p>Elixir runs on the Erlang VM and integrates beautifully with <a href="https://github.com/erlang/otp">OTP</a>
+which is trusted by many companies to build resilient, performant, distributed applications.</p>
+
+<p>It&rsquo;s an expressive language, easily extensible using hygienic <a href="http://elixir-lang.org/getting-started/meta/macros.html">macros</a>.
+Defining a parallel map function is as simple as:</p>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">defmodule</span> <span style="color: #a6e22e">Parallel</span> <span style="color: #66d9ef">do</span>
+  <span style="color: #66d9ef">def</span> <span style="color: #f8f8f2">pmap(collection,</span> <span style="color: #f8f8f2">func)</span> <span style="color: #66d9ef">do</span>
+    <span style="color: #f8f8f2">collection</span>
+    <span style="color: #f92672">|&gt;</span> <span style="color: #a6e22e">Enum</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">map(</span><span style="color: #f92672">&amp;</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">Task</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">async(</span><span style="color: #66d9ef">fn</span> <span style="color: #f92672">-&gt;</span> <span style="color: #f8f8f2">func</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">(&amp;1)</span> <span style="color: #66d9ef">end</span><span style="color: #f8f8f2">)))</span>
+    <span style="color: #f92672">|&gt;</span> <span style="color: #a6e22e">Enum</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">map(</span><span style="color: #f92672">&amp;</span><span style="color: #a6e22e">Task</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">await</span><span style="color: #f92672">/</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+  <span style="color: #66d9ef">end</span>
+<span style="color: #66d9ef">end</span>
+</pre></div>
+
+<p><em>(snippet taken from <a href="http://elixir-recipes.github.io">elixir-recipes</a>)</em></p>
+
+<p>Elixir focuses on the points where Ruby arguably is lacking more, having a homey
+syntax for rubyists (compared to Erlang).</p>
+
+<p>I also find it important that Elixir ships with a build tool (Mix), a
+testing framework (ExUnit) and offers intuitive <a href="http://elixir-lang.org/getting-started/erlang-libraries.html">interoperability</a> with Erlang.</p>
+
+<h2 id="community">Community</h2>
+
+<p>The community is amazing. We call ourselves alchemists and I really like
+the mystery vibes around the name.</p>
+
+<h3 id="elixir-hubs">Elixir Hubs</h3>
+
+<ul>
+<li><a href="https://elixirforum.com/">https://elixirforum.com/</a></li>
+<li><a href="https://www.reddit.com/r/elixir/">https://www.reddit.com/r/elixir/</a></li>
+<li><a href="http://elixir-lang.slack.com/">http://elixir-lang.slack.com/</a></li>
+</ul>
+
+<p>On all the above platforms I found members to be responsive to
+questions, nice and talkative. The community seems to be blooming, slack
+has already more than 11.000 members with ~1000 of them active at any time.</p>
+
+<h2 id="pattern-matching">Pattern Matching</h2>
+
+<p>Elixir makes pattern matching more approachable.</p>
+
+<p>As stated in <a href="https://www.amazon.com/dp/0134841972">Introduction to Functional Programming (1992)</a></p>
+
+<blockquote>
+<p>Pattern matching is one of the cornerstones of an equational style of
+definition; more often than not it leads to a cleaner and more readily understandable
+definition than a style based on conditional equations.
+(&hellip;) it also simplifies the process of reasoning formally about functions.</p>
+</blockquote>
+
+<p>Since most people are familiar with equational style of definition from math,
+pattern matching seems like the natural way to adapt from math to programming.</p>
+
+<h2 id="my-progress-so-far">My Progress so far</h2>
+
+<ul>
+<li>I solved some adventofcode exercises using Elixir to become more familiar</li>
+<li>I read <a href="https://www.goodreads.com/book/show/18194084-introducing-elixir">Introducing Elixir</a></li>
+<li>I wrote an API client for work <a href="https://github.com/skroutz/skroutz.ex">skroutz.ex</a>)</li>
+<li>Talked about Elixir at <a href="https://www.meetup.com/Athens-Ruby-Meetup/">Athens Ruby Meetup</a> (<a href="https://speakerdeck.com/zorbash/lets-talk-about-elixir">presentation</a>)</li>
+<li>I read <a href="https://www.goodreads.com/book/show/17971957-programming-elixir">Programming Elixir</a></li>
+<li>I created and maintain <a href="https://github.com/kittoframework/kitto">Kitto</a> and open-source framework to create dashboards</li>
+<li>I read <a href="https://www.goodreads.com/book/show/20524444-elixir-in-action">Elixir in Action</a></li>
+<li>I read <a href="https://www.goodreads.com/book/show/20524444-elixir-in-action">Metaprogramming Elixir</a></li>
+<li>I read <a href="https://www.goodreads.com/book/show/808815.Concurrent_Programming_ERLANG">Concurrent Programming in
+ERLANG</a></li>
+<li>I read <a href="https://www.goodreads.com/book/show/26871792-programming-phoenix">programming phoenix</a></li>
+<li>Currently reading <a href="https://www.goodreads.com/book/show/25563811-the-little-elixir-otp-guidebook">The Little Elixir &amp; OTP Guidebook</a></li>
+</ul>
+
+<h2 id="next-steps">Next steps</h2>
+
+<ul>
+<li>Dive in deeper in OTP and read more Erlang books</li>
+<li>Give <a href="https://github.com/elixir-lang/gen_stage">GenStage</a> a try</li>
+<li>Improve and extend <a href="https://github.com/kittoframework/kitto">Kitto</a></li>
+<li>Blog about <a href="https://github.com/kittoframework/kitto">Kitto</a></li>
+<li>Release a project I&rsquo;m working on these days (codename: sourcery), built with Phoenix</li>
+</ul>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href=""></a></h4>
+  
+  <p>Read <a href="">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=My%20year%20with%20Elixir&nbsp;-&nbsp;Dimitris%20Zorbas%20%7c%3e%20code&amp;url=%2fpost%2fmy-year-with-elixir%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2fmy-year-with-elixir%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=%2fpost%2fmy-year-with-elixir%2f&amp;description=My%20year%20with%20Elixir"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=%2fpost%2fmy-year-with-elixir%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Dimitris Zorbas |&gt; code</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</body>
+</html>
+

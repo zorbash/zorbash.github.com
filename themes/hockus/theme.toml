@@ -1,0 +1,10 @@
+name = "hockus"
+license = "You can't use it"
+description = "zorbash's theme adapted from Casper"
+homepage = "http://zorbash.com/"
+tags = ["blog"]
+min_version=0.15
+
+[author]
+  name = "Dimitris Zorbash"
+  homepage = "http://zorbash.com"

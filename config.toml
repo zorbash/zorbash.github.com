@@ -1,0 +1,30 @@
+title = "Dimitris Zorbas"
+languageCode = "en-us"
+PygmentsCodeFences = true
+copyright = "All rights reserved - 2016"
+theme = "hockus"
+
+[[menu.main]]
+  name = "Github Repos"
+  pre = "<h3>Follow me</h3>"
+  url = "https://github.com/zorbash"
+  weight = 100
+
+[[menu.main]]
+  name = "Twitter Timeline"
+  url = "https://twitter.com/_zorbash"
+  weight = 101
+
+[params]
+  description = "Code spells, smells and sourcery"
+  hideHUGOSupport = true
+  author = "Dimitris Zorbas"
+  bio = "Brace sourcerer, engineer and open-source addict @ skroutz"
+  authorwebsite = "http://zorbash.com"
+  githubName = "zorbash"
+  twitterName = "_zorbash"
+  cover = "images/road.jpg"
+  logo = "images/zorbash.jpg"
+
+[params.social]
+  twitter = "_zorbash"
