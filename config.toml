@@ -26,6 +26,7 @@ baseurl = "http://zorbash.com/"
   twitterName = "_zorbash"
   cover = "images/road.jpg"
   logo = "images/zorbash.jpg"
+  googleAnalyticsUserId = "UA-89343761-1"
 
 [params.social]
   twitter = "_zorbash"

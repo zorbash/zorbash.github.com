@@ -32,7 +32,7 @@ distributed applications following the path of Erlang.
 ## Why Elixir
 
 My first experience with Elixir came when at [work](http://skroutz.gr) my team was
-looking for looking for a web application framework to receive enormous
+looking for a web application framework to receive enormous
 loads of Analytics traffic (see related [analytics-blogpost][analytics-blogpost]).
 
 We investigated many options in nodejs, Erlang, Clojure and Ruby.
@@ -76,6 +76,19 @@ I wholeheartedly tempt you to give it a look.
 
 Elixir runs on the Erlang VM and integrates beautifully with [OTP][otp]
 which is trusted by many companies to build resilient, performant, distributed applications.
+
+For those unfamiliar with OTP, it's a development environment for
+concurrent programming, featuring:
+
+* The Erlang interpreter and compiler
+* Erlang standard libraries
+* [Dialyzer][dialyzer], a static analysis tool
+* [Mnesia][mnesia], a distributed database
+* Erlang Term Storage (ETS), an in-memory database
+* A debugger
+* [Observer][observer], a GUI with information about characteristics of the system
+* An event tracer
+* A release-management tool
 
 Elixir applications are meant to be build upon the principles of Erlang:
 <img src="http://i.imgur.com/rv6a5zV.jpg" alt="trinity">
@@ -181,3 +194,6 @@ Feel free to make reading suggestions and comments on the [reddit post](https://
 [why-elixir]: http://theerlangelist.com/article/why_elixir
 [juric]: https://github.com/sasa1977
 [adventofcode]: https://adventofcode.com/
+[dialyzer]: http://learnyousomeerlang.com/dialyzer
+[mnesia]: https://elixirschool.com/lessons/specifics/mnesia/
+[observer]: http://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#observer
