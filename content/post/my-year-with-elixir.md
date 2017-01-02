@@ -40,7 +40,7 @@ We ended up using [Goliath][goliath], an [Event-Machine][eventmachine] based web
 framework in Ruby for team productivity reasons (team consisted of .
 
 
-Upon considering Erlang and [Chicago Boss](https://github.com/postrank-labs/goliath), I also
+Upon considering Erlang and [Chicago Boss][chicago-boss], I also
 found out about Elixir and Phoenix (which was just released at the time) and both caught my eye.
 
 ### First Thoughts
@@ -170,7 +170,7 @@ pattern matching seems like the natural way to adapt from math to programming.
 Feel free to make reading suggestions and comments on the [reddit post](https://www.reddit.com/r/elixir/comments/5jwxuc/my_year_with_elixir/).
 
 [analytics-blogpost]: https://engineering.skroutz.gr/blog/skroutz-analytics/
-[goliath]: https://engineering.skroutz.gr/blog/skroutz-analytics/
+[goliath]: https://github.com/postrank-labs/goliath
 [kitto]: https://github.com/kittoframework/kitto
 [valim]: https://github.com/josevalim
 [otp]: https://github.com/erlang/otp
@@ -197,3 +197,4 @@ Feel free to make reading suggestions and comments on the [reddit post](https://
 [dialyzer]: http://learnyousomeerlang.com/dialyzer
 [mnesia]: https://elixirschool.com/lessons/specifics/mnesia/
 [observer]: http://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#observer
+[chicago-boss]: http://chicagoboss.org/
