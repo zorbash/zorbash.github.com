@@ -23,7 +23,7 @@ distributed applications following the path of Erlang.
 </br>
 
 <div class="polaroid">
-  <img src="http://i.imgur.com/n3CIYyt.jpg" class="img-medium" alt="oz">
+  <img src="http://i.imgur.com/9t8Cagu.jpg" class="img-medium" alt="oz">
   <p>Fellow Alchemists marching to the land of OTP</p>
 </div>
 
