@@ -3,7 +3,7 @@ languageCode = "en-us"
 PygmentsCodeFences = true
 copyright = "All rights reserved - 2016"
 theme = "hockus"
-baseurl = "http://zorbash.com/"
+baseurl = "https://zorbash.com/"
 
 [[menu.main]]
   name = "Github Repos"
