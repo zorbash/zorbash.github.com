@@ -16,6 +16,11 @@ baseurl = "https://zorbash.com/"
   url = "https://twitter.com/_zorbash"
   weight = 101
 
+[[menu.main]]
+  name = "Goodreads Profile"
+  url = "https://www.goodreads.com/user/show/13437694-dimitrios"
+  weight = 102
+
 [params]
   description = "Code spells, smells and sourcery"
   hideHUGOSupport = true
