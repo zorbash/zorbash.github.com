@@ -154,7 +154,7 @@ Informs people reading your code, on the procedure to follow if they wish to
 contribute back, and the [etiquette][netiquette] to conform to for any communication
 concerning the project.
 
-GitHub will prompt users about to create an issue to your repo to read your guidelines
+GitHub will prompt users creating an issue to your repo, to read your guidelines,
 when such a file is found (read about the GitHub feature [here][github-contributing]).
 
 ##### Suggestion
@@ -255,6 +255,7 @@ git config --global commit.gpgsign true
 * [Social Architecture - Peter Hintjens][hintjens-social-arch]
 
 You can also find a raw markdown version of the guidelines [here][guidelines-raw].
+
 Feel free to make reading suggestions and comments on the [reddit post][reddit-post]
 or [Hacker News][hn-post].
 
