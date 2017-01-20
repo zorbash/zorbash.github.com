@@ -29,7 +29,12 @@ the packaged source.
 The objective of the guidelines below is to increase efficiency in
 communication and raise awareness on good packaging practices. It's
 meant to be minimal yet practical, written with rubygems, hex, npm, et al.
-packages in mind.
+packages in mind.  
+
+To avoid confusion about the use of the word "packaging", in this
+context, it conveys the meaning of measures to be taken for source code
+to be able to be effectively packaged and released for language package management
+platforms.
 
 
 ## Build systems, not just apps
@@ -43,7 +48,6 @@ This can reduce frustration for dependents of the package and allow the base of
 contributors to expand, as more people will be able to get involved with the release procedure.
 
 It's a basic rule of quality, a process has to be written down, otherwise it cannot improve and be respected.
-
 
 ### Software Packaging Guidelines
 
@@ -214,7 +218,9 @@ How not to write a changelog: https://github.com/nodejs/node/blob/v2.5.0/deps/np
 All versions have to be present in the changelog.
 Decide on the format of the changelog you'll use and be consistent. Use
 a neutral tone, and exercise brevity. A long list of helpful tips can be
-found at [keepachangelog.com][keepachangelog]
+found at [keepachangelog.com][keepachangelog].
+
+> Don't just dump your git log, or use scripts to generate changelog entries it for you
 
 
 #### Release Signing
@@ -248,6 +254,8 @@ git config --global commit.gpgsign true
 * [Linux Foundation - Best Practices Criteria for FLOSS][linux-floss-criteria]
 * [Social Architecture - Peter Hintjens][hintjens-social-arch]
 
+You can also find a raw markdown version of the guidelines [here][guidelines-raw].
+
 [oss-watch]: http://oss-watch.ac.uk/resources/releasemanagementbestpractice
 [apache-releases]: http://www.apache.org/dev/#releases
 [apache-package-signing]: http://www.apache.org/dev/release-signing.html#keys-policy
@@ -272,3 +280,4 @@ git config --global commit.gpgsign true
 [zeromq-c4]: https://rfc.zeromq.org/spec:42/C4/
 [linux-floss-criteria]: https://github.com/linuxfoundation/cii-best-practices-badge/blob/master/doc/criteria.md
 [hintjens-social-arch]: https://www.gitbook.com/book/hintjens/social-architecture
+[guidelines-raw]: https://gist.github.com/Zorbash/4003bc10f0ac0abb8890b11e045d9d69
