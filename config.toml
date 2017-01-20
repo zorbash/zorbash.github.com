@@ -21,6 +21,11 @@ baseurl = "https://zorbash.com/"
   url = "https://www.goodreads.com/user/show/13437694-dimitrios"
   weight = 102
 
+[[menu.main]]
+  name = "SpeakerDeck Profile"
+  url = "https://speakerdeck.com/zorbash"
+  weight = 103
+
 [params]
   description = "Code spells, smells and sourcery"
   hideHUGOSupport = true
