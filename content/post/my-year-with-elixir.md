@@ -147,7 +147,7 @@ pattern matching seems like the natural way to adapt from math to programming.
 
 * Solved some [adventofcode][adventofcode] exercises using Elixir to familiarize myself more
 * Read [Introducing Elixir][introducing-elixir]
-* Wrote an API client for work [skroutz.ex][skroutz.ex])
+* Wrote an API client for work ([skroutz.ex][skroutz.ex])
 * Talked about Elixir at [Athens Ruby Meetup][ruby-meetup] ([presentation][elixir-presentation])
 * Been at Elixir meetups in Berlin and London
 * Read [Programming Elixir][programming-elixir]
