@@ -255,6 +255,8 @@ git config --global commit.gpgsign true
 * [Social Architecture - Peter Hintjens][hintjens-social-arch]
 
 You can also find a raw markdown version of the guidelines [here][guidelines-raw].
+Feel free to make reading suggestions and comments on the [reddit post][reddit-post]
+or [Hacker News][hn-post].
 
 [oss-watch]: http://oss-watch.ac.uk/resources/releasemanagementbestpractice
 [apache-releases]: http://www.apache.org/dev/#releases
@@ -281,3 +283,5 @@ You can also find a raw markdown version of the guidelines [here][guidelines-raw
 [linux-floss-criteria]: https://github.com/linuxfoundation/cii-best-practices-badge/blob/master/doc/criteria.md
 [hintjens-social-arch]: https://www.gitbook.com/book/hintjens/social-architecture
 [guidelines-raw]: https://gist.github.com/Zorbash/4003bc10f0ac0abb8890b11e045d9d69
+[hn-post]: https://news.ycombinator.com/item?id=13445370
+[reddit-post]: https://www.reddit.com/r/programming/comments/5p5axf/software_packaging_guidelines/
