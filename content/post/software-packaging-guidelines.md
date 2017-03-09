@@ -18,7 +18,7 @@ the packaged source.
 </br>
 
 <div class="polaroid">
-  <img src="/images/posts/package_conveyor.gif" class="img-medium" alt="oz">
+  <img src="/images/posts/package_conveyor.gif" class="img-medium" alt="conveyor">
   <p>Continuous Delivery..sort of</p>
 </div>
 
