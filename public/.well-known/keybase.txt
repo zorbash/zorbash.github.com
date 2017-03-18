@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/zorbash
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://zorbash.com
+  * I am zorbash (https://keybase.io/zorbash) on keybase.
+  * I have a public key with fingerprint B2FC 1D21 EAD4 974E 9139  761C D122 8308 112F 8610
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012065d9ac9484aaaab25db9578670523cc2ca2773746324a84ba76d7252eae5cd5b0a",
+            "fingerprint": "b2fc1d21ead4974e9139761cd1228308112f8610",
+            "host": "keybase.io",
+            "key_id": "d1228308112f8610",
+            "kid": "0101d20f579cf2d1c61d9bf2e46db650e933b47999930f6e782ab2e0db1608e6975f0a",
+            "uid": "3a11fc65e0965f2fb95b10f6bddd3819",
+            "username": "zorbash"
+        },
+        "revoke": {
+            "sig_ids": [
+                "097436f34851f480a5d48a035af504b9b8c61fc68b15b05ce4d2298516adb2800f"
+            ]
+        },
+        "service": {
+            "hostname": "zorbash.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1489842165,
+    "expire_in": 157680000,
+    "prev": "989fa0ceebf0e18f1b03067f393938d3488d85b689bde85367de0db3d00e8b70",
+    "seqno": 17,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.66
+Comment: https://keybase.io/crypto
+
+yMOtAnicbZJ7UFRVHMcXBBSmFMvSaazs0oy8hHPf5xLCwOiMoj0MEwl31nvuORc2
+cHfZXUgCNIdCa1ELITEirYmVkdCokZcIoQkjxKgVkttUikG+R5a0yQd1LpN/NNO5
+f9w5935/39/n9/jm4WmmsIAzTNmM2fHl4QEDPf4C09rB+FvFDLLjIiahmMklUy+S
+h4nLbcm1YiaBASwHJBErqqYIUFDpQZyIkSLKUJKByPGaxmkqJ8u8LEg8J6hQQKos
+YZkTOaISUcMiAioTy+hWWzZxOpxWm5vaIk7XWMyxRMWCIgtEYXlFllgNsxwHeQBZ
+ltOhxAIamGN3GREUDqkuEme102/0YpnC+x/9A25A/YEuyoqmc5jVJBYrSOeIIGEk
+iYAoPI8EWaGHB7pEZMjRygjAiJUAJJIii/oUd8GUHa+yrK5JIgGKJOqcThuAWBqH
+MMY8ZBVD6CJOm7qBUPUbdidlzWFKYxknKbTnEqOtLms2ZXYxCVkMoCXzks4LUGR1
+AQJVxAJUAS+quggEpCBIcWk6iFjaPVEjAuY4hYolFSMOAqAzZupNExZatSlzo0n/
+TR6n2TdQKofT7rZr9jz6I8ftdrgSDCh3kcNQvk6Q5V8PC7LaMJ0QjSgkTpfVbmMS
+WKrU3FbDlBWgAgWOlcRYhmx0WJ3EYjUUoixRGgCMPKSQWipQ0VWgEYJ0QFioswjw
+QJJ1XqEPxLRiiKGIJKggTKDISzI2es5jAAhEsjE/F8m32am3TDnVbOpJG2dT3QVO
+wpQe61kXZAoIM4UEBxqrawoLDX+w0I2ecNMhbAl8PI8t7Z30khMdA96zrYdC0xkw
+nl+yqtPp2xr4d0KuZ+hZPHnHfORwV7n7/du7h9Vz15Q0c1/iK1fGf6ZbFNj+a8uF
+LdOrb6X0tP4U/PILxakzr/mS3KmVlh98b9eOOwOiHOaWjpqlKZtSXrp8amLjibvt
+9kpzb1BT7nZzZG/Gq0U7QhedTxk8fqestPTz6w3LY7rnrs2JLm8uG9l0vqXf11hf
+0/DlQ9ODQv54ijFdXN94Ye7hORNHtaztEa3mhtPN/sSwT/y+q1fOfepKr2wsSdbQ
+3pPLPg6p9Sx4r3/UX13RUe//bZuvxZO78958//6sm8DyIT5187HmqFVvtq5Z8sgz
+75CJzm3HPricfKPq6Z17Er2e2xeD5bntA9/21ZUtmN2x45frT2T5DrQ1HOw8HfOZ
+97nh1yRv2p3o1OH0+2P97pk9uxun7Xk3Z2Xk8wuV0QMVxUcX7avZW7KQJEZ/lOHq
+WpCZzH29pC+kiQ5h7FLkrprgore6lyWCwaG4wYmaGW2dUQebdn3/3cq/4pK+unj2
+XER09ZHxjKq70auTYjYPOlKr0hZvnN6cHXEcPdpuran3vHjjqvvJ+L4VKZY/14xE
+JK3bd29T/mhdeVPd2PwNxLKiq39JesDqL2rT9+cP4YG2heszu5Orl/4YtWXxrPuz
+tl7KPBMcEXR9+ZwKKXaed/LkvKH4rK7fN4/8A1l34jY=
+=23kH
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zorbash
+
+==================================================================
