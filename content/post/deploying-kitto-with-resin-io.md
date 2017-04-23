@@ -139,8 +139,8 @@ able to try your dashboard locally at: http://localhost:4000
 You might enjoy reading the following blog posts for developing
 dashboards with Kitto:
 
-* Writing Kitto widgets [blogpost-kitto-widgets][blogpost-kitto-widgets]
-* Writing Kitto jobs [blogpost-kitto-jobs][blogpost-kitto-jobs]
+* [Writing Kitto widgets][blogpost-kitto-widgets]
+* [Writing Kitto jobs][blogpost-kitto-jobs]
 
 Extended documentation for Kitto can be found in the [wiki][kitto-wiki] and
 its [hexdocs][hexdocs-kitto].
@@ -159,7 +159,7 @@ Click on the "APPLICATIONS" link on the top-left corner and fill in the required
 
 ![resin-new-app](/images/posts/resin/resin_new_app.png)
 
-Follow the instructions found there to download the Resin OS for your
+Follow the instructions found here to download the Resin OS for your
 device.
 
 ![resin-instructions](/images/posts/resin/resin_instructions.png)
@@ -307,13 +307,6 @@ Have a look: https://docs.resin.io/tools/cli/
 * Prevent [iceweasel][iceweasel] checks for updates or use chromium
 * Configure screen resolution (`xrandr`) via env variables
 
-## Questions & Troobleshooting
-
-You can ask questions at the following Gitter chats:
-
-* [kitto/chat][kitto-gitter]
-* [resin-io/chat][resin-chat]
-
 [kitto]: https://github.com/kittoframework/kitto/
 [resin]: https://resin.io
 [elixir]: http://elixir-lang.org/
@@ -334,5 +327,5 @@ You can ask questions at the following Gitter chats:
 [kitto-kiosk-source]: https://github.com/kittoframework/docker-images/tree/master/kitto-kiosk
 [dashing]: https://github.com/Shopify/dashing
 [resin-native-arm-builders]: https://forums.resin.io/t/native-arm-builders-beta/171
+[resin-public-url]: https://docs.resin.io/introduction/#/pages/management/devices.md#enable-public-device-url
 [iceweasel]: https://wiki.debian.org/Iceweasel
-[resin-chat]: https://gitter.im/resin-io/chat
