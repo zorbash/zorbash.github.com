@@ -307,6 +307,13 @@ Have a look: https://docs.resin.io/tools/cli/
 * Prevent [iceweasel][iceweasel] checks for updates or use chromium
 * Configure screen resolution (`xrandr`) via env variables
 
+## Questions & Troobleshooting
+
+You can ask questions at the following Gitter chats:
+
+* [kitto/chat][kitto-gitter]
+* [resin-io/chat][resin-chat]
+
 [kitto]: https://github.com/kittoframework/kitto/
 [resin]: https://resin.io
 [elixir]: http://elixir-lang.org/
@@ -328,3 +335,4 @@ Have a look: https://docs.resin.io/tools/cli/
 [dashing]: https://github.com/Shopify/dashing
 [resin-native-arm-builders]: https://forums.resin.io/t/native-arm-builders-beta/171
 [iceweasel]: https://wiki.debian.org/Iceweasel
+[resin-chat]: https://gitter.im/resin-io/chat
