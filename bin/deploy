@@ -1,0 +1,4 @@
+#!/bin/bash
+
+hugo
+rsync -avz --delete public $USER@$HOST:/var/www/sites/blog/
