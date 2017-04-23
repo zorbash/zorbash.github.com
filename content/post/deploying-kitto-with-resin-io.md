@@ -139,8 +139,8 @@ able to try your dashboard locally at: http://localhost:4000
 You might enjoy reading the following blog posts for developing
 dashboards with Kitto:
 
-* Writing Kitto widgets [blogpost-kitto-widgets]
-* Writing Kitto jobs [blogpost-kitto-jobs]
+* Writing Kitto widgets [blogpost-kitto-widgets][blogpost-kitto-widgets]
+* Writing Kitto jobs [blogpost-kitto-jobs][blogpost-kitto-jobs]
 
 Extended documentation for Kitto can be found in the [wiki][kitto-wiki] and
 its [hexdocs][hexdocs-kitto].
