@@ -84,7 +84,7 @@ together will the resin agent, which will take care of application and system up
 #### Install Elixir
 
 You can follow the official instructions at http://elixir-lang.org/install.html
-or you can use the official [Kitto Docker image][kittod-docker-image] for local development.
+or you can use the official [Kitto Docker image][kitto-docker-image] for local development.
 
 #### Get the Installer
 
@@ -104,7 +104,8 @@ You can now use the installer to generate a dashboard using:
 mix kitto.new dashboard
 ```
 
-This will create a directory structure containing a sample dashboard.
+This will create a directory structure containing a sample dashboard.  
+
 The core conventions of Kitto are:
 
 You define `dashboards` in templates located under `./dashboards`.
