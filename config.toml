@@ -28,6 +28,7 @@ baseurl = "https://zorbash.com/"
 
 [params]
   description = "Code spells, smells and sourcery"
+  metaDescription = "Blog about programming of Dimitris Zorbas. Topics: Ruby, Elixir, Erlang, JavaScript"
   hideHUGOSupport = true
   author = "Dimitris Zorbas"
   bio = "Brave sourcerer, engineer and open-source addict @ quiqup.com"
