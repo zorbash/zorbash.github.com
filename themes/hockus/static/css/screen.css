@@ -231,14 +231,17 @@ h1 {
 h2 {
     font-size: 3.6rem;
     letter-spacing: -1px;
+    margin-bottom: 28px;
 }
 
 h3 {
     font-size: 3rem;
+    margin-bottom: 22px;
 }
 
 h4 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 h5 {
@@ -272,13 +275,13 @@ ol, ul {
 
 ol ol, ul ul,
 ul ol, ol ul {
-    margin: 0 0 0.4em 0;
+    margin: 0 0 1.1em 0;
     padding-left: 2em;
 }
 
 dl dt {
     float: left;
-    width: 180px;
+    width: 190px;
     overflow: hidden;
     clear: left;
     text-align: right;
@@ -313,7 +316,7 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
+    margin: 1.75em 0 1.75em -0.2em;
     padding: 0 0 0 1.75em;
     border-left: #4A4A4A 0.4em solid;
 }
@@ -1510,6 +1513,7 @@ body:not(.post-template) .post-title {
 
     ol, ul {
         padding-left: 2em;
+        margin-bottom: 1.75em;
     }
 
     h1 {
@@ -1727,6 +1731,7 @@ body:not(.post-template) .post-title {
 
     h4 {
         font-size: 1.9rem;
+        margin-bottom: 20px;
     }
 
     h5 {
