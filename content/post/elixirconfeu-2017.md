@@ -51,7 +51,7 @@ what to expect in upcoming releases.
 
 Depression Valley
 : The point where no-one is using your language and you're unsure you're
-headed to the right way.
+headed in the right direction. 
 
 Lego Lang
 : That was the original name of the language in the early days.
