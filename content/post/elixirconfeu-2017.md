@@ -10,7 +10,7 @@ share = true
 +++
 
 
-I was in beautify Barcelona for [ElixirConf.EU][ElixirConf.EU-2017] 2017.  
+I was in beautiful Barcelona for [ElixirConf.EU][ElixirConf.EU-2017] 2017.  
 In this post I'm sharing some of my notes and impressions about it.
 
 </br>
@@ -100,7 +100,7 @@ a few occasions. See [example][process-dicts]
 The talk was about implementing a neural network on stock market data to predict
 prices and act upon them.
 
-* Machine Learning on the BEAM is fun practical and super doable.
+* Machine Learning on the BEAM is fun practical and super doable
 * I think he used the [neat_ex][neat_ex] package for the neural networks
 
 Little or no code was shown during the talk and I couldn't find the
@@ -108,14 +108,10 @@ source in one of Erics' GitHub [repositories][weinstein-repos].
 
 
 ---------------------
+
 ## Conference - Day 2
 
-
-
-
 ### Always Available - [Claudio Ortolina][Profile-Claudio-Ortolina]
-
-
 
 [Slides][Slides-Claudio-Ortolina]
 
