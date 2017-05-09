@@ -79,7 +79,15 @@ Topics:
 
 Some little-known facts:
 
-* The Elixir compiler wraps your code in a top-level module.
+* Elixir defines a dummy function in a dummy module, with the program as
+  the body, all directly in Abstract Format
+
+```elixir
+{_, mfa} = :erlang.process_info(self(), :current_function)
+
+mfa
+#=> {:elixir_compiler_0, __FILE__, 1}
+```
 
 ### Ecto - DBConnection - Ecto's SQL Sandbox - [fishcakez][Profile-John-Fish] (aka John Fish)
 
