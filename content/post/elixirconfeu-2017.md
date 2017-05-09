@@ -79,7 +79,6 @@ Topics:
 
 Some little-known facts:
 
-* Anonymous functions are converted to function definitions in a dummy module.
 * The Elixir compiler wraps your code in a top-level module.
 
 ### Ecto - DBConnection - Ecto's SQL Sandbox - [fishcakez][Profile-John-Fish] (aka John Fish)
@@ -131,7 +130,7 @@ end
 
 ### GraphQL in Practice - [Bruce Williams][Profile-Bruce-Williams] & [Benjamin Wilson][Profile-Ben-Wilson]
 
-The talk was about using [Absinthe][absinthe-graphql] a GraphQL library
+The talk was about using [Absinthe][absinthe-graphql], a GraphQL library
 for Elixir.
 
 > GraphQL is not just a frontend technology
