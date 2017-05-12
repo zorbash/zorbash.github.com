@@ -17,7 +17,7 @@ In this post I'm sharing some of my notes and impressions about it.
 
 <div class="polaroid">
   <img src="/images/posts/elixirconfeu2017/team_quiqup_elixirconf.jpg" class="img-medium" alt="team-quiqup">
-  <p>Team Quiqup <small>[Zorbas, Hawkins, Rabe]</small></p>
+  <p>Team <a href="https://quiqup.com">Quiqup</a> <small>[Zorbas, Hawkins, Rabe]</small></p>
 </div>
 
 </br>
@@ -88,6 +88,8 @@ Some little-known facts:
 mfa
 #=> {:elixir_compiler_0, __FILE__, 1}
 ```
+
+If you find this interesting, you should read Xavier's relevant blog [post][fxn-elixir-post].
 
 ### Ecto - DBConnection - Ecto's SQL Sandbox - [fishcakez][Profile-John-Fish] (aka John Fish)
 
@@ -260,3 +262,4 @@ looks of [https://kitto.io/dashboards/jobs][kitto-jobs]
 [phoenix]: http://www.phoenixframework.org/
 [black-pudding-tapas]: https://www.google.co.uk/search?q=morcilla&tbm=isch
 [RubyMoney]: https://github.com/RubyMoney/
+[fxn-elixir-post]: https://medium.com/@fxn/how-does-elixir-compile-execute-code-c1b36c9ec8cf
