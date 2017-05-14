@@ -252,6 +252,26 @@ h6 {
     font-size: 2rem;
 }
 
+h2:hover a.permalink, h3:hover a.permalink, h4:hover a.permalink, h5:hover a.permalink {
+  visibility: visible;
+}
+
+a.permalink {
+  visibility: hidden;
+  font-size: 18px;
+  color: 666;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+a.permalink:before {
+  content: '#';
+  padding-left: 10px;
+  font-size: 2.7rem;
+  text-decoration: none
+}
+
 a {
     color: #4A4A4A;
     transition: color 0.3s ease;

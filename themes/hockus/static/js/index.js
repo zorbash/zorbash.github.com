@@ -7,19 +7,28 @@
     "use strict";
 
     var $document = $(document);
+    var permalink = function() {
+      $('h1,h2,h3,h4,h5,h6').filter('[id]').each(function(i, el) {
+        var $target  = $(el)
+        var fragment = $target.attr('id')
+
+        if ($target.find('a.permalink').length == 0 && fragment) {
+          $target.append('<a href="#' + fragment + '" class="permalink"></a>')
+        }
+      })
+    }
 
     $document.ready(function () {
+      var $postContent = $(".post-content");
+      $postContent.fitVids();
 
-        var $postContent = $(".post-content");
-        $postContent.fitVids();
+      $(".scroll-down").arctic_scroll();
+      $(".menu-button[href='#'], .nav-cover, .nav-close").on("click", function(e){
+          e.preventDefault();
+          $("body").toggleClass("nav-opened nav-closed");
+      });
 
-        $(".scroll-down").arctic_scroll();
-
-        $(".menu-button[href='#'], .nav-cover, .nav-close").on("click", function(e){
-            e.preventDefault();
-            $("body").toggleClass("nav-opened nav-closed");
-        });
-
+      permalink();
     });
 
     // Arctic Scroll by Paul Adam Davis
