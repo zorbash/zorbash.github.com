@@ -330,3 +330,9 @@ Have a look: https://docs.resin.io/tools/cli/
 [resin-native-arm-builders]: https://forums.resin.io/t/native-arm-builders-beta/171
 [resin-public-url]: https://docs.resin.io/introduction/#/pages/management/devices.md#enable-public-device-url
 [iceweasel]: https://wiki.debian.org/Iceweasel
+
+<style>
+.main-header {
+  background-size: 34% auto;
+}
+</style>

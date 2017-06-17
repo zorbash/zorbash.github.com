@@ -198,3 +198,9 @@ Feel free to make reading suggestions and comments on the [reddit post](https://
 [mnesia]: https://elixirschool.com/lessons/specifics/mnesia/
 [observer]: http://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#observer
 [chicago-boss]: http://chicagoboss.org/
+
+<style>
+.main-header {
+  background-size: 34% auto;
+}
+</style>

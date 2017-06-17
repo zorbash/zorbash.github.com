@@ -537,6 +537,7 @@ body.nav-opened .site-wrapper {
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
+    background-color: white;
     overflow: hidden;
 }
 
@@ -1204,7 +1205,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-head.main-header {
-    height: 65vh;
+    height: 220px;
     min-height: 180px;
 }
 
