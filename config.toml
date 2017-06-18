@@ -1,6 +1,8 @@
 title = "Dimitris Zorbas"
 languageCode = "en-us"
 PygmentsCodeFences = true
+PygmentsUseClasses = true
+
 copyright = "All rights reserved - 2017"
 theme = "hockus"
 baseurl = "https://zorbash.com/"
