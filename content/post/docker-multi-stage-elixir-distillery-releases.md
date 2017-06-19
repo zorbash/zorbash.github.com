@@ -354,6 +354,6 @@ for..
 
 <style>
 .main-header {
-  background-size: 34% auto;
+  background-size: 32% auto;
 }
 </style>
