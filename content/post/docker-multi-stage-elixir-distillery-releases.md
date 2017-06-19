@@ -324,6 +324,8 @@ for..
 * Adding distillery plugins to compile assets
 * Running migrations on deployment
 
+Feel free to suggests edits and make comments on the [reddit post][reddit-post].
+
 [elixir]: http://elixir-lang.org/
 [docker]: https://www.docker.com/
 [distillery]: https://github.com/bitwalker/distillery
@@ -351,6 +353,7 @@ for..
 [blog-source]: https://github.com/Zorbash/zorbash.github.com
 [gitlab-ci]: https://about.gitlab.com/features/gitlab-ci-cd/
 [alpine]: https://alpinelinux.org/about/
+[reddit-post]: https://www.reddit.com/r/elixir/comments/6ia7se/distillery_releases_with_docker_multistage_builds/
 
 <style>
 .main-header {
