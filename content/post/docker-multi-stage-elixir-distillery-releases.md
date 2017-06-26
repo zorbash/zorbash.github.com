@@ -261,7 +261,6 @@ RUN apt-get -qq update
 RUN apt-get -qq install libssl1.0.0 libssl-dev
 WORKDIR /app
 COPY --from=builder /app/_build/prod/rel/goo .
-RUN rm -rf /app/releases/
 
 CMD ["./bin/goo", "foreground"]
 ```
