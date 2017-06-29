@@ -224,6 +224,66 @@ committia.vim splits the buffer into 3 windows; edit window, status window and d
 * Stephen Fry - [Making history][making-history]
 * Sydney Padua - [The Thrilling Adventures of Lovelace and Babbage][babbage-ada-book]
 
+### Final Remarks (Quiqup)
+
+* Please use your work email (you@quiqup.com) and username.
+
+Bad
+
+```
+commit fb08400bcee620e97c164fd9562ae1b034f50002
+Author: jenny_from_the_blockchain <jennyblk@hackmeimsick.io>
+Date:   Mon Jun 26 17:13:50 2017 +0100
+
+Change all the things!
+```
+
+Good
+
+```
+commit fb08400bcee620e97c164fd9562ae1b034f50002
+Author: Dimitris Zorbas <dimitrios@quiqup.com>
+Date:   Mon Jun 26 17:13:50 2017 +0100
+
+Change all the things!
+```
+
+
+* Don't prefix your commit messages with tags that are too specific or uninformative
+
+Bad
+
+```
+c0b25089 [GM-666] Remove phx_ecto duplication
+b7adcb4c [GM-666] Move shared web templates to phx_web
+3fd344f1 [GM-666] Split test aparts and increase coverage in Ecto task
+c91443b5 [GM-666] Rename mix files to match Elixir structure
+```
+
+You have merge commits to indicate that are meant to be grouped (and when needed reverted together).
+
+Bad
+
+```
+c0b25089 Testing: Remove phx_ecto duplication
+b7adcb4c WIP: Move shared web templates to phx_web
+b7adcb4c  Move shared web templates to phx_web
+```
+
+Good
+
+Work with the team to decide on a few tags that can be used.
+
+```
+c0b25084 [i18n] Add translations for the voynich manuscript
+c0b25086 [Migration] Add DasModel class
+c0b25088 [ci-skip] Extend documentation on anti-gravity module
+c0b24089 [Optimization] Remove recursion
+c0b24042 [Optimization] Remove resursion [Optimization] Remove recursion
+c0b24042 [Optimization] Remove resursion [Optimization] Remove recursion
+c0b24042 [Optimization] Remove resursion [Optimization] Remove resursion [Optimization] Remove recursion
+c0b24042 [Optimization] Remove resursion [Optimization] Remove resursion [Optimization] Remove recursion
+```
 
 [tig]: https://jonas.github.io/tig/
 [vim-fugitive]: https://github.com/tpope/vim-fugitive
