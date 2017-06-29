@@ -91,7 +91,8 @@ concurrent programming, featuring:
 * A release-management tool
 
 Elixir applications are meant to be build upon the principles of Erlang:
-<img src="https://i.imgur.com/rv6a5zV.jpg" alt="trinity">
+
+![trinity](/images/posts/my_year_elixir/trinity.jpg)
 
 It's an expressive language, easily extensible using hygienic [macros][macros].  
 Defining a parallel map function is as simple as:
