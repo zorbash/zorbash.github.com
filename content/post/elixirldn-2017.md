@@ -128,6 +128,8 @@ end
 
 ### [Louis Pilfold][Profile-Louis-Pilfold] - Getting Pretty Serious
 
+[Video][Video-lpil]
+
 </br>
 
 <div class="polaroid">
@@ -225,6 +227,7 @@ Quotes from the talk:
 ### [Brooklyn Zelenka][Profile-zelenka] - Witchcraft: Monads for the Working Alchemist
 
 [Slides][Slides-zelenka]
+[Video][Video-zelenka]
 
 She talked about the [Blub Paradox][blub-paradox], coming from a more powerful language (Haskell), 
 she felt the need to make Elixir look more like it.
@@ -261,6 +264,8 @@ Lot's of amazing conversations which I'm probably still digesting.
 * [CodeMesh][codemesh] While it's not targeting Elixir specifically, features
   ([Joe Armstrong][armstrong-blog], [Robert Virding][virding-blog], [Fred Herbert][ferd], [Guy L. Steele][guy-steele])
   amongst many others, making the conf profoundly attractive to Erlang / Elixir / Functional Programming engineers.
+
+* For news and announcements about Elixir.LDN follow [@elixirldn][twitter-elixirldn] on twitter.
 
 [Elixir.LDN-2017]: http://www.elixir.london/
 [elixir-lang-slack]: elixir-lang.slack.com
@@ -316,6 +321,9 @@ Lot's of amazing conversations which I'm probably still digesting.
 [Profile-Zelenka]: https://twitter.com/expede
 [Slides-zelenka]: https://www.slideshare.net/BrooklynZelenka/witchcraft-78939455
 [blub-paradox]: https://en.wikipedia.org/wiki/Paul_Graham_(computer_programmer)#The_Blub_paradox
+[Video-lpil]: https://www.youtube.com/watch?v=g4HXeP_CZbc
+[Video-zelenka]: https://www.youtube.com/watch?v=psdG5iV57q0
+[twitter-elixirldn]: https://twitter.com/LdnElixir
 
 <style>
 .main-header {
