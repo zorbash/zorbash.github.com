@@ -84,6 +84,7 @@ release notes [here][elixirscript-release-notes].
 ### [Evadne Wu][Profile-Evadne-Wu] - How to Sell Elixir
 
 [Slides][Slides-Evadne-Wu]
+[Video][Video-wu]
 
 The talk was about suggesting the use of Elixir for a system of Faria Education Group where Evadne works
 , what it took to convince the management and their story developing it.
@@ -97,6 +98,7 @@ Some of the quotes I noted from this talk are:
 ### [Peter Saxton][Profile-Peter-Saxton] - Working with HTTP/2 in Elixir
 
 [Slides][Slides-Peter-Saxton]
+[Video][Video-saxton]
 
 Peter has built an HTTP/2 only server entirely in Elixir. The server is
 called [Ace][ace].
@@ -324,6 +326,8 @@ Lot's of amazing conversations which I'm probably still digesting.
 [Video-lpil]: https://www.youtube.com/watch?v=g4HXeP_CZbc
 [Video-zelenka]: https://www.youtube.com/watch?v=psdG5iV57q0
 [twitter-elixirldn]: https://twitter.com/LdnElixir
+[Video-saxton]: https://www.youtube.com/watch?v=zqzkrUVfv-k
+[Video-wu]: https://www.youtube.com/watch?v=YviCIOT7C6I
 
 <style>
 .main-header {
