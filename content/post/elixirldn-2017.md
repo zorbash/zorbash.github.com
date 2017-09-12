@@ -26,6 +26,8 @@ the [meetup.com group][elixir-london-meetup].
 
 ### Keynote - [José Valim][Profile-Jose-Valim] - Elixir 1.5 Update and Q&A
 
+[Video][Video-keynote]
+
 The talk was mostly about Elixir 1.5 features and demystifying the way Elixir files are loaded,
 parsed and compiled to BEAM files.
 
@@ -163,6 +165,8 @@ luckily there are instructions for integration with Vim [here][exfmt-vim-instruc
 
 ### [Georgina McFadyen][Profile-Georgina-McFadyen] - Elixir Umbrella - Microservices or Majestic Monolith?
 
+[Video][Video-mcfadyen]
+
 This was an informative talk about creating, developing and releasing
 [umbrella applications][umbrella-apps]. It seemed to me like a condensed version of the
 ["Microservices under the Umbrella"][microservices-umbrella-link] workshop which I attended at
@@ -188,8 +192,11 @@ Nikolay presented his story teaching Elixir in a functional programming
 course at the university of Sofia.
 
 [Slides][slides-meddle]
+[Video][Video-tsvetinov]
 
 ### [Gary Rennie][Profile-Gary-Rennie] - HTTP/2 Plug to Phoenix, Cowboy too
+
+[Video][Video-Rennie]
 
 Plug is HTTP/1.1 only and developed mostly with the [Cowboy][cowboy] Erlang server
 in mind.
@@ -200,6 +207,8 @@ Gary did a demo of using Cowboy directly from Elixir and later
 one of an HTTP/2 chat service with [Phoenix][phoenix] and [Chatterbox][chatterbox].
 
 ### [Péter Gömöri][Profile-Gomori] - Profiling and Tracing for all with Xprof
+
+[Video][Video-gomori]
 
 This talk was about the [Xprof][xprof] tool which is a single-function
 profiler aimed for production safety, ideal for immediate visual
@@ -220,6 +229,7 @@ on, just to be safe. It only keeps 1 minute worth of data.
 ### [Andrea Leopardi][Profile-leopardi] - Stepping into a New Era: Injecting Elixir in an Existing System
 
 [Slides][Slides-leopardi]
+[Video][Video-leopardi]
 
 Quotes from the talk:
 
@@ -267,7 +277,7 @@ Lot's of amazing conversations which I'm probably still digesting.
   ([Joe Armstrong][armstrong-blog], [Robert Virding][virding-blog], [Fred Herbert][ferd], [Guy L. Steele][guy-steele])
   amongst many others, making the conf profoundly attractive to Erlang / Elixir / Functional Programming engineers.
 
-* For news and announcements about Elixir.LDN follow [@elixirldn][twitter-elixirldn] on twitter.
+* For news and announcements about Elixir.LDN follow [@LdnElixir][twitter-elixirldn] on twitter.
 
 [Elixir.LDN-2017]: http://www.elixir.london/
 [elixir-lang-slack]: elixir-lang.slack.com
@@ -328,6 +338,12 @@ Lot's of amazing conversations which I'm probably still digesting.
 [twitter-elixirldn]: https://twitter.com/LdnElixir
 [Video-saxton]: https://www.youtube.com/watch?v=zqzkrUVfv-k
 [Video-wu]: https://www.youtube.com/watch?v=YviCIOT7C6I
+[Video-Rennie]: https://www.youtube.com/watch?v=R5xTuw7NYg8
+[Video-keynote]: https://www.youtube.com/watch?v=p4uE-jTB_Uk
+[Video-leopardi]: https://www.youtube.com/watch?v=5EDD1oZ23tY
+[Video-mcfadyen]: https://www.youtube.com/watch?v=QJ3tDAdTjPI
+[Video-gomori]: https://www.youtube.com/watch?v=AAXtjPiXbWE
+[Video-tsvetinov]: https://www.youtube.com/watch?v=cKfme8i_nO0
 
 <style>
 .main-header {
