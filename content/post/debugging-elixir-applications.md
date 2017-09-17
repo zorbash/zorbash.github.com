@@ -2,7 +2,7 @@
 author = "Dimitris Zorbas"
 date = "2017-09-17"
 draft = false
-title = "Debugging & Tracking Elixir Applications"
+title = "Debugging & Tracing Elixir Applications"
 image = "images/posts/elixir-horizontal.png"
 tags = ["debugging", "phoenix", "elixir", "erlang", "distributed", "cheatsheet"]
 comments = true

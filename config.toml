@@ -2,6 +2,7 @@ title = "Dimitris Zorbas"
 languageCode = "en-us"
 PygmentsCodeFences = true
 PygmentsUseClasses = true
+DisqusShortname = "zorbash-blog"
 
 copyright = "All rights reserved - 2017"
 theme = "hockus"
@@ -30,7 +31,7 @@ baseurl = "https://zorbash.com/"
 
 [params]
   description = "Code spells, smells and sourcery"
-  metaDescription = "Blog about programming of Dimitris Zorbas. Topics: Ruby, Elixir, Erlang, JavaScript"
+  metaDescription = "Blog about programming of Dimitris Zorbas. Topics: Ruby, Elixir, Erlang, JavaScript, Linux"
   hideHUGOSupport = true
   author = "Dimitris Zorbas"
   bio = "Brave sourcerer, engineer and open-source addict @ quiqup.com"
@@ -40,6 +41,9 @@ baseurl = "https://zorbash.com/"
   cover = "images/road.jpg"
   logo = "images/zorbash.jpg"
   googleAnalyticsUserId = "UA-89343761-1"
+
+[site]
+  DisqusShortname = "zorbash-blog"
 
 [params.social]
   twitter = "_zorbash"
