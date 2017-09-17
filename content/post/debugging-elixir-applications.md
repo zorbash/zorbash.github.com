@@ -2,7 +2,7 @@
 author = "Dimitris Zorbas"
 date = "2017-09-17"
 draft = false
-title = "Debugging Elixir Applications"
+title = "Debugging & Tracking Elixir Applications"
 image = "images/posts/elixir-horizontal.png"
 tags = ["debugging", "phoenix", "elixir", "erlang", "distributed", "cheatsheet"]
 comments = true
@@ -27,7 +27,7 @@ iex --sname example --cookie test -S mix
 
 ### Get a Remote shell
 
-For a regular Elixir application started with a name and a cookie you can connect using:
+For a regular Elixir application started with a name and a cookie, you can get a remote shell using:
 
 ```shell
 # Where cookie has to be the exact same as the one for the application you wish to connect to
@@ -40,7 +40,7 @@ iex --sname tracer --cookie test --remsh example@autoverse
 This section is specific to [Distillery][distillery] releases. You may find my previous guide about
 [distillery releases][distillery-releases-post] useful at this point.
 
-For an application named `example` which is released as:
+For an application named `example` which is released with:
 
 ```shell
 mix release --env=prod
@@ -60,8 +60,8 @@ You can connect to the node you just started using:
 
 The boot script (in our case `./_build/prod/rel/example`) is created from [boot.eex][distillery-boot-template])
 supports a variety of options supplied as env vars. A very useful one
-for debugging is `DEBUG_BOOT`. You can set it to true to enable verbose
-output of the commands being executed by the script. Example:
+for debugging is `DEBUG_BOOT`. You can set it to `true` to enable verbose
+output of the commands being executed by the script.
 
 ```elixir
 DEBUG_BOOT=true ./_build/prod/rel/example remote_console
@@ -78,46 +78,46 @@ Unfortunately in some of cases it's not trivial to run it in production in your 
 
 If you arent't already familiar with the `IEx.Helpers` functions, take some time and do it, it's worth it.
 
-Read the documentation of [IEx.Helpers.break/2][iex-break] on how to set up breakpoints (not for production 💣).
+Read [IEx.Helpers.break/2][iex-break] on how to set up breakpoints (not for production 💣).
 
-Remember that you can print help info for a module, function or macro using IEx.Helpers.h/1.
+Remember that you can print help info for a module, function or macro using [IEx.Helpers.h/1][iex-helpers-h-1].
 
 ```elixir
 h Genserver
-#                                    GenServer
-#
-# A behaviour module for implementing the server of a client-server relation.
-#
-# A GenServer is a process like any other Elixir process and it can be used to
-# keep state, execute code asynchronously and so on. The advantage of using a
-# ..more
+#=>                                    GenServer
+#=>
+#=> A behaviour module for implementing the server of a client-server relation.
+#=>
+#=> A GenServer is a process like any other Elixir process and it can be used to
+#=> keep state, execute code asynchronously and so on. The advantage of using a
+#=> ..more
 
 # Get type information using IEx.Helpers.i/1
 i "Hello!"
 
-# Term
-#   "Hello"
-# Data type
-#   BitString
-# ..more
+#=> Term
+#=>   "Hello"
+#=> Data type
+#=>   BitString
+#=> ..more
 ```
 
 ### OTP Behaviour Tracing
 
-You can use functions of the [:sys][erlang-sys-module] to trace OTP behaviours or your
+You can use functions of the [:sys][erlang-sys-module] module to trace OTP behaviours or your
 own [special processes][erlang-special-processes].
 
 I strongly suggest reading Chapter 5 of the amazing
 [Designing for Scalability with Erlang/OTP][designing-scalability-book] book for
 a detailed exploration of the debugging facilities of OTP behaviours.
 
-You can use [`:sys.get_state/1`][sys_get_state] to get the state of a process.
+You can use [`:sys.get_state/1`][sys_get_state] to get the state of a process:
 
 ```elixir
 {:ok, pid} = Agent.start fn -> [:erlang.unique_integer] end
 
 :sys.get_state pid
-# => [-576460752303423368]
+#=> [-576460752303423368]
 ```
 
 You can replace the state of a running process using [`:sys.replace_state/2`][sys_replace_state]:
@@ -126,7 +126,7 @@ You can replace the state of a running process using [`:sys.replace_state/2`][sy
 {:ok, pid} = Agent.start fn -> [:erlang.unique_integer] end
 
 :sys.replace_state pid, fn (state) -> [:erlang.unique_integer([:positive]) | state] end
-# => [154, -576460752303423368]
+#=> [154, -576460752303423368]
 ```
 
 You can log events using [`:sys.log/2`][sys_log]:
@@ -141,41 +141,41 @@ Agent.get(pid, &(&1))
 
 :sys.log pid, :get
 
-# {:ok,
-#  [{{:in,
-#     {:"$gen_call", {#PID<0.73.0>, #Reference<0.0.8.303>},
-#      {:get, #Function<6.54118792/1 in :erl_eval.expr/5>}}}, #PID<0.102.0>,
-#    #Function<0.40920150/3 in :gen_server.decode_msg/8>},
-#   {{:out, [4242], #PID<0.73.0>, [4242]}, #PID<0.102.0>,
-#    #Function<6.40920150/3 in :gen_server.reply/5>}]}
+#=> {:ok,
+#=>  [{{:in,
+#=>     {:"$gen_call", {#PID<0.73.0>, #Reference<0.0.8.303>},
+#=>      {:get, #Function<6.54118792/1 in :erl_eval.expr/5>}}}, #PID<0.102.0>,
+#=>    #Function<0.40920150/3 in :gen_server.decode_msg/8>},
+#=>   {{:out, [4242], #PID<0.73.0>, [4242]}, #PID<0.102.0>,
+#=>    #Function<6.40920150/3 in :gen_server.reply/5>}]}
 
 :sys.log pid, :print
-# *DBG* <0.102.0> got call {get,#Fun<erl_eval.6.54118792>} from [4242]
-# *DBG* <0.102.0> sent foo to [4242], new state foo
+#=> *DBG* <0.102.0> got call {get,#Fun<erl_eval.6.54118792>} from [4242]
+#=> *DBG* <0.102.0> sent foo to [4242], new state foo
 
 :sys.get_status pid
 
-# {:status, #PID<0.102.0>, {:module, :gen_server},
-#  [["$ancestors": [#PID<0.73.0>, #PID<0.48.0>],
-#    "$initial_call": {:erl_eval, :"-expr/5-fun-3-", 0}], :running, #PID<0.102.0>,
-#   [log: {10,
-#     [{{:out, [4242], #PID<0.73.0>, [4242]}, #PID<0.102.0>,
-#       #Function<6.40920150/3 in :gen_server.reply/5>},
-#      {{:in,
-#        {:"$gen_call", {#PID<0.73.0>, #Reference<0.0.8.303>},
-#         {:get, #Function<6.54118792/1 in :erl_eval.expr/5>}}}, #PID<0.102.0>,
-#       #Function<0.40920150/3 in :gen_server.decode_msg/8>}]}],
-#   [header: 'Status for generic server <0.102.0>',
-#    data: [{'Status', :running}, {'Parent', #PID<0.102.0>},
-#     {'Logged events',
-#      {10,
-#       [{{:out, [4242], #PID<0.73.0>, [4242]}, #PID<0.102.0>,
-#         #Function<6.40920150/3 in :gen_server.reply/5>},
-#        {{:in,
-#          {:"$gen_call", {#PID<0.73.0>, #Reference<0.0.8.303>},
-#           {:get, #Function<6.54118792/1 in :erl_eval.expr/5>}}}, #PID<0.102.0>,
-#         #Function<0.40920150/3 in :gen_server.decode_msg/8>}]}}],
-#    data: [{'State', [4242]}]]]}
+#=> {:status, #PID<0.102.0>, {:module, :gen_server},
+#=>  [["$ancestors": [#PID<0.73.0>, #PID<0.48.0>],
+#=>    "$initial_call": {:erl_eval, :"-expr/5-fun-3-", 0}], :running, #PID<0.102.0>,
+#=>   [log: {10,
+#=>     [{{:out, [4242], #PID<0.73.0>, [4242]}, #PID<0.102.0>,
+#=>       #Function<6.40920150/3 in :gen_server.reply/5>},
+#=>      {{:in,
+#=>        {:"$gen_call", {#PID<0.73.0>, #Reference<0.0.8.303>},
+#=>         {:get, #Function<6.54118792/1 in :erl_eval.expr/5>}}}, #PID<0.102.0>,
+#=>       #Function<0.40920150/3 in :gen_server.decode_msg/8>}]}],
+#=>   [header: 'Status for generic server <0.102.0>',
+#=>    data: [{'Status', :running}, {'Parent', #PID<0.102.0>},
+#=>     {'Logged events',
+#=>      {10,
+#=>       [{{:out, [4242], #PID<0.73.0>, [4242]}, #PID<0.102.0>,
+#=>         #Function<6.40920150/3 in :gen_server.reply/5>},
+#=>        {{:in,
+#=>          {:"$gen_call", {#PID<0.73.0>, #Reference<0.0.8.303>},
+#=>           {:get, #Function<6.54118792/1 in :erl_eval.expr/5>}}}, #PID<0.102.0>,
+#=>         #Function<0.40920150/3 in :gen_server.decode_msg/8>}]}}],
+#=>    data: [{'State', [4242]}]]]}
 
 
 # Start tracing a process, with trace info printed in the standard output
@@ -199,14 +199,17 @@ send pid, :something
 # Fetch statistics for the process
 :sys.statistics pid, :get
 
-# {:ok,
-#  [start_time: {{2017, 9, 13}, {0, 46, 42}},
-#   current_time: {{2017, 9, 13}, {0, 49, 47}}, reductions: 285, messages_in: 1,
-#   messages_out: 0]}
+#=> {:ok,
+#=>  [start_time: {{2017, 9, 13}, {0, 46, 42}},
+#=>   current_time: {{2017, 9, 13}, {0, 49, 47}}, reductions: 285, messages_in: 1,
+#=>   messages_out: 0]}
 ```
 
-⚠️  Keep in mind that the above sys functions are implemented as synchronous calls ([read more][otp-send_system_msg]).  
+⚠️   Keep in mind that the above sys functions are implemented as synchronous calls.
+See [here][otp-send_system_msg] for the implementation.
+
 This means that the process in question may not respond right away.
+
 For that reason, such functions, support passing a timeout, to specify the amount of time to wait for a response, as the last argument.
 
 ⛑  Remember to turn debugging off when you're done, using `:sys.no_debug(pid)`.
@@ -323,17 +326,17 @@ If you're curious to understand how your IEx session works, you can try:
 # Evaluate a simple expression
 2 = 1 + 1
 
-# (<0.73.0>) << {eval,<0.48.0>,<<"2 = 1 + 1\n">>,
-#    #{'__struct__' => 'Elixir.IEx.State',
-#      cache => [],
-#      counter => 11,
-#      prefix => <<"iex">>}} (Timestamp: {1505,560410,139339})
-# (<0.73.0>) in {'Elixir.IEx.Evaluator',loop,3} (Timestamp: {1505,560410,139348})
-# (<0.73.0>) code_server ! {code_call,<0.73.0>,
-#   {ensure_loaded,'Elixir.List.Chars.List'}} (Timestamp: {1505,
-#                                                          560410,
-#                                                          139361})
-# ..more
+#=> (<0.73.0>) << {eval,<0.48.0>,<<"2 = 1 + 1\n">>,
+#=>    #{'__struct__' => 'Elixir.IEx.State',
+#=>      cache => [],
+#=>      counter => 11,
+#=>      prefix => <<"iex">>}} (Timestamp: {1505,560410,139339})
+#=> (<0.73.0>) in {'Elixir.IEx.Evaluator',loop,3} (Timestamp: {1505,560410,139348})
+#=> (<0.73.0>) code_server ! {code_call,<0.73.0>,
+#=>   {ensure_loaded,'Elixir.List.Chars.List'}} (Timestamp: {1505,
+#=>                                                          560410,
+#=>                                                          139361})
+#=> ..more
 ```
 
 
@@ -369,9 +372,9 @@ You can peek at memory stats using [:erlang.memory/0][erlang-memory-0]
 
 ```elixir
 :erlang.memory
-[total: 75799504, processes: 34587896, processes_used: 34572944,
- system: 41211608, atom: 793529, atom_used: 780108, binary: 4931384,
- code: 19859074, ets: 2599216]
+#=> [total: 75799504, processes: 34587896, processes_used: 34572944,
+#=>  system: 41211608, atom: 793529, atom_used: 780108, binary: 4931384,
+#=>  code: 19859074, ets: 2599216]
 ```
 
 ### ETS
@@ -390,23 +393,23 @@ Get stats for all tables
 ```elixir
 :ets.i
 
-# id              name              type  size   mem      owner
-# ----------------------------------------------------------------------------
-# 1               code              set   344    25890    code_server
-# 4098            code_names        set   56     10041    code_server
-# ac_tab          ac_tab            set   37     2022     application_controller
-# disk_log_names  disk_log_names    set   1      313      disk_log_server
-# disk_log_pids   disk_log_pids     set   1      312      disk_log_server
-# elixir_config   elixir_config     set   10     431      <0.52.0>
+#=> id              name              type  size   mem      owner
+#=> ----------------------------------------------------------------------------
+#=> 1               code              set   344    25890    code_server
+#=> 4098            code_names        set   56     10041    code_server
+#=> ac_tab          ac_tab            set   37     2022     application_controller
+#=> disk_log_names  disk_log_names    set   1      313      disk_log_server
+#=> disk_log_pids   disk_log_pids     set   1      312      disk_log_server
+#=> elixir_config   elixir_config     set   10     431      <0.52.0>
 ```
 
 ```elixir
 :ets.info(:some_table)
 
-# [read_concurrency: false, write_concurrency: false, compressed: false,
-#  memory: 121, owner: #PID<0.389.0>, heir: :none, name: :timer_tab, size: 1,
-#  node: :example@autoverse, named_table: true, type: :ordered_set, keypos: 1,
-#  protection: :protected]
+#=> [read_concurrency: false, write_concurrency: false, compressed: false,
+#=>  memory: 121, owner: #PID<0.389.0>, heir: :none, name: :timer_tab, size: 1,
+#=>  node: :example@autoverse, named_table: true, type: :ordered_set, keypos: 1,
+#=>  protection: :protected]
 ```
 
 💡 The `size` info can be used to get the number of objects in the table
@@ -448,6 +451,58 @@ Start an IEx session with a short name and a cookie:
 iex --sname example --cookie test
 ```
 
+### Getting Debug Information for all Nodes
+
+[:c.ni/0][c-ni-0]
+
+Displays system information, listing information about all processes across nodes.
+
+```elixir
+:c.ni
+```
+
+It will have output like the following:
+
+<pre class="nodes-smalltext">
+  <code>
+    Pid        Initial Call                  Heap     Reds  Msgs  Registered          Current Function          Stack
+    <0.0.0>    otp_ring0:start/2             1598     3418     0  init                init:loop/1                   2
+    <0.1.0>    erts_code_purger:start/0      6772    49562     0  erts_code_purger    erts_code_purger:loop/0       3
+    <0.4.0>    erlang:apply/2               10958  8516146     0  erl_prim_loader     erl_prim_loader:loop/3        5
+  </code>
+</pre>
+
+To inspect remote processes you should use [:rpc.pinfo/1][rpc-pinfo-1] instead of
+[Process.info/1][process-info-1] (or :[erlang.process_info/1][erlang-process-info-1]) since the latter works only for local
+processes.
+
+```elixir
+init = :rpc.call Process, :whereis, [:init]
+Process.info init
+#=> ** (ArgumentError) argument error
+#=>    :erlang.process_info(#PID<26268.0.0>)
+
+:rpc.pinfo init
+#=> [registered_name: :init, current_function: {:init, :loop, 1},
+#=>  initial_call: {:otp_ring0, :start, 2}, status: :waiting, message_queue_len: 0,
+#=>  messages: [], links: [#PID<26268.6.0>, #PID<26268.7.0>, #PID<26268.4.0>],
+#=>  dictionary: [], trap_exit: true, error_handler: :error_handler,
+#=>  priority: :normal, group_leader: #PID<26268.0.0>, total_heap_size: 1220,
+#=>  heap_size: 610, stack_size: 2, reductions: 3660,
+#=>  garbage_collection: [max_heap_size: %{error_logger: true, kill: true, size: 0},
+#=>   min_bin_vheap_size: 46422, min_heap_size: 233, fullsweep_after: 65535,
+#=>   minor_gcs: 4], suspending: []]
+```
+
+Remember that you can get the node for a `pid` using [`node/1`][node-1]:
+
+```elixir
+remote_pid = pid "26268.0.0"
+
+node remote_pid
+#=> :example_remote_node@somewhere
+```
+
 ## [EPMD][epmd]
 
 The Erlang Port Mapper Deamon is the most common way to map nodes to
@@ -485,12 +540,12 @@ You should be able to ping each other using:
 
 ```elixir
 Node.ping :"node2@autoverse"
-# => pong # It works
-# => pang # Oh snap, it doesn't work
+#=> pong # It works
+#=> pang # Oh snap, it doesn't work
 
 # You can get a list of the registered nodes using:
 :net_adm.names
-# => {:ok, [{'node2', 57066}, {'node1', 57075}]}
+#=> {:ok, [{'node2', 57066}, {'node1', 57075}]}
 ```
 
 ## Starting a slave node
@@ -502,11 +557,11 @@ From within the IEx session:
 :slave.start :autoverse, :example_slave, '-setcookie test -loader inet'
 ```
 
-The slave node will be `:example_slave@autoverse`, and will be included in the list of :visible nodes.
+The slave node will be `:example_slave@autoverse`, and will be included in the list of `:visible` nodes.
 
 ```elixir
 Node.list
-# => [:example_slave@autoverse]
+#=> [:example_slave@autoverse]
 ```
 
 By default a node loads code from the file system, but can also load
@@ -535,7 +590,7 @@ Start the `erl_boot_loader` application from within that node:
 :erl_boot_server.start {127,0,0,1}
 ```
 
-and then start a slave node using the code server we just created:
+Then start a slave node using the code server we just created:
 
 ```elixir
 {:ok, slave} = :slave.start 'autoverse', :slave, '-loader inet -hosts 127.0.0.1 -setcookie 1234 -id slave'
@@ -544,49 +599,6 @@ and then start a slave node using the code server we just created:
 For further reading about code loading on remote nodes, I highly recommend reading [this blogpost][remote-code-loading],
 and the documentation of the modules which handle remote code loading [erl_boot_server][erl_boot_server] and
 [erl_prim_loader][erl_prim_loader].
-
-### Getting Debug Information for all Nodes
-
-[:c.ni/0][c-ni-0]
-
-Displays system information, listing information about all processes
-
-```elixir
-:c.ni
-```
-
-Which will have output like the following:
-
-<pre class="nodes-smalltext">
-  <code>
-    Pid        Initial Call                  Heap     Reds  Msgs  Registered          Current Function          Stack
-    <0.0.0>    otp_ring0:start/2             1598     3418     0  init                init:loop/1                   2
-    <0.1.0>    erts_code_purger:start/0      6772    49562     0  erts_code_purger    erts_code_purger:loop/0       3
-    <0.4.0>    erlang:apply/2               10958  8516146     0  erl_prim_loader     erl_prim_loader:loop/3        5
-  </code>
-</pre>
-
-To inspect remote processes you should use [:rpc.pinfo/1][rpc-pinfo-1] instead of
-[Process.info/1][process-info-1] (or :[erlang.process_info/1][erlang-process-info-1]) since the latter work only for local
-processes.
-
-```elixir
-init = :rpc.call Process, :whereis, [:init]
-Process.info init
-# ** (ArgumentError) argument error
-#    :erlang.process_info(#PID<26268.0.0>)
-
-:rpc.pinfo init
-# [registered_name: :init, current_function: {:init, :loop, 1},
-#  initial_call: {:otp_ring0, :start, 2}, status: :waiting, message_queue_len: 0,
-#  messages: [], links: [#PID<26268.6.0>, #PID<26268.7.0>, #PID<26268.4.0>],
-#  dictionary: [], trap_exit: true, error_handler: :error_handler,
-#  priority: :normal, group_leader: #PID<26268.0.0>, total_heap_size: 1220,
-#  heap_size: 610, stack_size: 2, reductions: 3660,
-#  garbage_collection: [max_heap_size: %{error_logger: true, kill: true, size: 0},
-#   min_bin_vheap_size: 46422, min_heap_size: 233, fullsweep_after: 65535,
-#   minor_gcs: 4], suspending: []]
-```
 
 ### Distributing a Module
 
@@ -601,24 +613,24 @@ end
 
 :rpc.call slave, :code, :load_binary, [Something, 'somefile', object_code]
 :rpc.call slave, Something, :say, []
-# => "Hello from Something"
+#=> "Hello from Something"
 ```
 
 At any point you can use [:c.m/0][c-m-0] to list all the loaded modules for a node and their source file.
 
 ```elixir
 :rpc.call slave, :c, :m, []
-Module                File
-Elixir.Agent            /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Agent.beam
-Elixir.Agent.Server     /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Agent.Server.beam
-Elixir.Code             /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Code.beam
-Elixir.GenServer        /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.GenServer.beam
-Elixir.Inspect.Algebra  /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Inspect.Algebra.beam
-Elixir.Inspect.Atom     /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Inspect.Atom.beam
-Elixir.Inspect.Opts     /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Inspect.Opts.beam
-Elixir.Kernel           /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Kernel.beam
-Elixir.Keyword          /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Keyword.beam
-Elixir.Process          /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Process.beam
+#=> Module                File
+#=> Elixir.Agent            /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Agent.beam
+#=> Elixir.Agent.Server     /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Agent.Server.beam
+#=> Elixir.Code             /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Code.beam
+#=> Elixir.GenServer        /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.GenServer.beam
+#=> Elixir.Inspect.Algebra  /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Inspect.Algebra.beam
+#=> Elixir.Inspect.Atom     /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Inspect.Atom.beam
+#=> Elixir.Inspect.Opts     /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Inspect.Opts.beam
+#=> Elixir.Kernel           /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Kernel.beam
+#=> Elixir.Keyword          /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Keyword.beam
+#=> Elixir.Process          /home/zorbash/.asdf/installs/elixir/1.4.5/bin/../lib/elixir/ebin/Elixir.Process.beam
 ```
 
 ### Libraries & Tools
@@ -634,6 +646,8 @@ The Erlang ecosystem has plenty of tools which can be used for debugging / traci
 A future blog post might cover some of them, as well as [LTTng][lttng] / [DTrace][dtrace] probes.
 
 Finally, I advise you to watch [this ElixirConf 2017 talk by Gabi Zuniga][elixirconf-tracing].
+
+Happy tracing!
 
 [permutation-city]: https://en.wikipedia.org/wiki/Permutation_City
 [erlang]: https://erlang.org/
@@ -677,6 +691,8 @@ Finally, I advise you to watch [this ElixirConf 2017 talk by Gabi Zuniga][elixir
 [greg-egan]: https://en.wikipedia.org/wiki/Greg_Egan
 [lttng]: http://erlang.org/doc/apps/runtime_tools/LTTng.html
 [dtrace]:http://erlang.org/doc/apps/runtime_tools/DTRACE.html
+[iex-helpers-h-1]: https://hexdocs.pm/iex/IEx.Helpers.html#h/1
+[node-1]: https://hexdocs.pm/elixir/Kernel.html#node/1
 
 <style>
 .main-header {
