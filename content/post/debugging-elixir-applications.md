@@ -340,6 +340,9 @@ If you're curious to understand how your IEx session works, you can try:
 ```
 
 
+The 17th chapter of [Erlang Programming][erlang-programming], features lots of pragmatic
+examples of `erlang:trace` and `dbg` functions and an overview of match specifications. I highly recommend it.
+
 ### Determining the Health of an Application
 
 ```elixir
@@ -668,6 +671,7 @@ Happy tracing!
 [c-m-0]: http://erlang.org/doc/man/c.html#m-0
 [erlang-memory-0]: http://erlang.org/doc/man/erlang.html#memory-0
 [designing-scalability-book]: http://shop.oreilly.com/product/0636920024149.do
+[erlang-programming]: http://shop.oreilly.com/product/9780596518189.do
 [erlang-sys-module]: http://erlang.org/doc/man/sys.html
 [otp-send_system_msg]: https://github.com/erlang/otp/blob/OTP-20.0/lib/stdlib/src/sys.erl#L300
 [sys_get_state]: http://erlang.org/doc/man/sys.html#get_state-1
