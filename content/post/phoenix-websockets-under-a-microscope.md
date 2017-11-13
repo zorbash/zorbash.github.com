@@ -10,9 +10,9 @@ share = true
 +++
 
 This is a code-reading and exploration post about the WebSockets side of [Phoenix][phoenix].
-It builds upon the tracing techniques showcased in the [previous post][previous-post] to observe
+It builds upon some of the tracing techniques showcased in the [previous post][previous-post], to observe
 some of the internals of Phoenix.
-It also features some debugging tricks I commonly use to debug WebSocket
+It also features some tricks I commonly employ to debug WebSocket
 related issues. The title and nature of this post are inspired by the
 marvellous book [Ruby Under a Microscope][ruby-under-a-microscope] written by [Pat Shaughenessy][pat-shaughenessy].
 
@@ -52,18 +52,18 @@ aspects of Phoenix and understand its inner workings.
 
 ### The Number Generator Application
 
-Leveraging the excellent scaffolding tasks of Phoenix, we can quickly build a sample application, 
-to start the exploration.
+We'll quickly build a sample application to start the exploration,
+leveraging the excellent scaffolding tasks of Phoenix, to start the exploration.
 
 The sample application assigns a random Integer to each connected client
-and streams numbers down the socket on a preconfigured interval.
+and streams numbers down the socket on a pre-configured interval.
 
 ```shell
 mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 mix phoenix.new numbers --no-brunch --no-ecto
 ```
 
-The `--no-brunch` option is employed to skip generating [Brunch][brunch]
+With the `--no-brunch` option, we skip generating [Brunch][brunch]
 related scaffolding, as none of the examples below require JavaScript and
 `--no-ecto` to skip database related configuration and modules.
 
@@ -215,10 +215,10 @@ it to `:infinity`.
 
 As you may read in the [Phoenix.Channel documentation][phoenix-channel]
 there are 3 functions `push/3`, `broadcast_from3/` and `broadcast/3`
-which can be used to send data to connected client(s) but have some
+which can be used to send data to connected clients, but have some
 not so subtle differences.
 
-* [push/3][channel-push-3] Broadcast the event to the current subscriber
+* [push/3][channel-push-3] Broadcasts the event to the current subscriber
 * [broadcast_from/3][channel-broadcast_from-3] Broadcasts the event to
   all but the current subscribers of a given topic
 * [broadcast/3][channel-broadcast-3] Broadcasts an event to all the
@@ -1294,7 +1294,7 @@ This is an expensive and private operation. DO NOT USE IT IN PROD.
 Getting a list of all the topics which have subscribers:
 
 ```elixir
-pool_size = Application.get_env(:numbers, Numbers.Endpoint)[:pubsub][:pool_size]
+pool_size = Application.get_env(:numbers, Numbers.Endpoint)[:pubsub][:pool_size] || 1
 0..(pool_size - 1) |> Enum.flat_map &Phoenix.PubSub.Local.list(Numbers.PubSub, &1)
 
 #=> ["numbers:42"]
@@ -1305,7 +1305,7 @@ pool_size = Application.get_env(:numbers, Numbers.Endpoint)[:pubsub][:pool_size]
 Getting the subscribers for a topic:
 
 ```elixir
-pool_size = Application.get_env(:numbers, Numbers.Endpoint)[:pubsub][:pool_size]
+pool_size = Application.get_env(:numbers, Numbers.Endpoint)[:pubsub][:pool_size] || 1
 0..(pool_size - 1) |> Enum.flat_map &Phoenix.PubSub.Local.subscribers(Numbers.PubSub, "numbers:42", &1)
 
 #=> [#PID<0.273.0>]
@@ -1315,7 +1315,7 @@ Getting the subscribers for a topic across nodes:
 
 ```elixir
 # With the assumptions that all the connected nodes are members of the PubSub cluster:
-pool_size = Application.get_env(:numbers, Numbers.Endpoint)[:pubsub][:pool_size]
+pool_size = Application.get_env(:numbers, Numbers.Endpoint)[:pubsub][:pool_size] || 1
 fun = &Phoenix.PubSub.Local.subscribers(Numbers.PubSub, "numbers:42", &1)
 :rpc.multicall [node() | Node.list], Enum, :flat_map, [0..(pool_size - 1), fun]
 
@@ -1447,9 +1447,9 @@ If you find it hard to build complex match specs by hand 🙀, you can try
 ## Conclusion
 
 The Phoenix codebase is a very interesting one and there's lot to learn
-for it. I really hope that sharing my quest to understand and explore
+from it. I really hope that sharing my quest to understand and explore
 Phoenix will be beneficial for others. If you found a mistake please
-blah
+[submit a pull request][blog-edit] or mention it in the comments.
 
 <style>
 .main-header {
@@ -1523,7 +1523,7 @@ blah
 [cowboy_protocol-start_link-4]: https://github.com/ninenines/cowboy/blob/1.1.2/src/cowboy_protocol.erl#L64
 [cowboy_router]: https://github.com/ninenines/cowboy/blob/1.1.2/src/cowboy_router.erl
 [http-upgrade-response]: https://github.com/ninenines/cowboy/blob/1.1.2/src/cowboy_websocket.erl#L173-L175
-
-[recap]: {{< ref "#phoenix-and-cowboy" >}}
+[phoenix-and-cowboy]: {{< ref "#phoenix-and-cowboy" >}}
 [subscribing]: {{< ref "#subscribing" >}}
 [phoenix.js-join]: https://github.com/phoenixframework/phoenix/blob/v1.2.5/web/static/js/phoenix.js#L292
+[blog-edit]: https://github.com/Zorbash/zorbash.github.com/edit/master/content/post/phoenix-under-a-microscope.md
