@@ -369,4 +369,8 @@ Feel free to suggests edits and make comments on the [reddit post][reddit-post].
 .main-header {
   background-size: 32% auto;
 }
+
+.highlight {
+  line-height: 20px;
+}
 </style>

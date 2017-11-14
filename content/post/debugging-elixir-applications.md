@@ -702,6 +702,11 @@ Happy tracing!
 .main-header {
   background-size: 32% auto;
 }
+
+.highlight {
+  line-height: 20px;
+}
+
 .nodes-smalltext {
   font-size: 70%;
   padding: 0;
