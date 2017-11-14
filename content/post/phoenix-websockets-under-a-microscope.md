@@ -1526,4 +1526,4 @@ Phoenix will be beneficial for others. If you found a mistake please
 [phoenix-and-cowboy]: {{< ref "#phoenix-and-cowboy" >}}
 [subscribing]: {{< ref "#subscribing" >}}
 [phoenix.js-join]: https://github.com/phoenixframework/phoenix/blob/v1.2.5/web/static/js/phoenix.js#L292
-[blog-edit]: https://github.com/Zorbash/zorbash.github.com/edit/master/content/post/phoenix-under-a-microscope.md
+[blog-edit]: https://github.com/Zorbash/zorbash.github.com/edit/master/content/post/phoenix-websockets-under-a-microscope.md
