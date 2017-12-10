@@ -82,7 +82,7 @@ Let's code our first channel by creating a `web/channels/integers_channels.ex`.
 defmodule Numbers.IntegersChannel do
   use Numbers.Web, :channel
 
-  def join("numbers:" <> type, _params, socket) when type in ~s(positive negative) do
+  def join("numbers:" <> type, _params, socket) when type in ~w(positive negative) do
     with type <- type |> String.to_existing_atom,
          socket <- socket
                    |> assign(:number, number(type))
