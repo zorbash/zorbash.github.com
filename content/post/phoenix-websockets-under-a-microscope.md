@@ -167,6 +167,11 @@ brew tap esphen/wsta https://github.com/esphen/wsta.git
 brew install wsta
 ```
 
+Windows
+
+Ensure you have a command prompt with GNU libraries, for example the git prompt, and run the provided binary file from there.
+You can find binary releases on the [releases page][wsta-releases].
+
 With [wsta][wsta] installed, we can connect to the positive numbers topic using:
 
 ```shell
@@ -1412,7 +1417,7 @@ A handful of WebSocket related traces you can attempt with recon are:
 
 ```elixir
 # Trace the next 50 subscriptions for the Numbers Phoenix app
-:recon_trace.calls {:ets, :insert, [{[:"Elixir.Numbers.PubSub.Local0", :_], [], [:"$_"]}]}, 100
+:recon_trace.calls {:ets, :insert, [{[:"Elixir.Numbers.PubSub.Local0", :_], [], [:"$_"]}]}, 50
 
 #=> 0:28:39.377466 <0.621.0> ets:insert('Elixir.Numbers.PubSub.Local0', {<<"numbers:42">>,
 #=>  {<0.621.0>,{<0.619.0>,'Elixir.Phoenix.Transports.WebSocketSerializer',[]}}})
@@ -1527,3 +1532,4 @@ Phoenix will be beneficial for others. If you found a mistake please
 [subscribing]: {{< ref "#subscribing" >}}
 [phoenix.js-join]: https://github.com/phoenixframework/phoenix/blob/v1.2.5/web/static/js/phoenix.js#L292
 [blog-edit]: https://github.com/Zorbash/zorbash.github.com/edit/master/content/post/phoenix-websockets-under-a-microscope.md
+[wsta-releases]: https://github.com/esphen/wsta/releases
