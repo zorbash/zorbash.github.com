@@ -643,6 +643,7 @@ The Erlang ecosystem has plenty of tools which can be used for debugging / traci
 * [recon][recon]
 * [wobserver][wobserver]
 * [XProf][xprof] (watch: [Elixir.LDN presentation][xprof-video])
+* [rexbug][rexbug]
 * [erlyberly][erlyberly]
 * [exrun][exrun]
 
@@ -697,6 +698,7 @@ Happy tracing!
 [dtrace]:http://erlang.org/doc/apps/runtime_tools/DTRACE.html
 [iex-helpers-h-1]: https://hexdocs.pm/iex/IEx.Helpers.html#h/1
 [node-1]: https://hexdocs.pm/elixir/Kernel.html#node/1
+[rexbug]: https://github.com/nietaki/rexbug
 
 <style>
 .main-header {
