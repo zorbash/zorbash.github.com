@@ -1,7 +1,7 @@
 +++
 author = "Dimitris Zorbas"
-date = "2018-01-31"
-draft = true
+date = "2018-02-16"
+draft = false
 title = "Effective Meetings"
 image = "images/posts/effective_meetings/sleep_optimized.jpg"
 tags = ["peopleware", "management", "fr-Agile™"]
