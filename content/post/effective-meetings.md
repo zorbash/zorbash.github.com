@@ -25,7 +25,7 @@ People’s time is highly valuable, so all meetings should be purposeful and wel
 executed according to type.
 
 Not all meetings are the same. It's important to be able to distinguish
-between a few basic types to set clear expectations and apply principles
+between a few basic types, to set clear expectations and apply principles
 to make them more effective.
 
 ### Process-Oriented
@@ -182,7 +182,7 @@ underground water will be necessary to support a colony.
 
 Dimitris and Leela will share their research on agriculture. Matt Damon,
 the first colonist, struggled with potato farming. A sustainable source of food will
-enable to colony to grow.
+enable the colony to grow.
 ```
 
 ## Miscellanea
