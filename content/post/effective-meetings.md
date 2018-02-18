@@ -215,6 +215,11 @@ their laptops as if they were remote. This also prioritises resolving
 early any issues with remote (timezones / teleconference infrastructure
 / process).
 
+----------------------
+
+*Found a mistake?* Please [submit a pull request][blog-edit] or mention it in the comments.
+
 [high-output-management]: https://www.goodreads.com/book/show/324750.High_Output_Management
 [agile-is-dead]: https://www.youtube.com/watch?v=a-BOSpxYJ9M&t=1416s
 [trello]: https://trello.com/
+[blog-edit]: https://github.com/Zorbash/zorbash.github.com/edit/master/content/post/effective-meetings.md
