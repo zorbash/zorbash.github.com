@@ -45,8 +45,8 @@ they should be run.
 This is a meeting between a manager / team-lead and a team member.
 It's typical to have an informal tone. It should be considered the
 subordinate's meeting with her agenda. The subordinate should be asked
-to prepare an outline, which forces her to think in front, of issues to
-be raised and also promotes accountability for the advancement of the
+to prepare an outline, which forces her to think of issues to
+be raised upfront and also promotes accountability for the advancement of the
 meeting.
 
 A small tip is to "Ask one more question" towards the end of the meeting. The subordinate
@@ -110,7 +110,7 @@ Before
 * Share the agenda to all the participants. Some of them may be
   appointed with information gathering on one meeting topics.
 * Ensure the participants approve and understand the agenda
-* Book a meeting room (and let know about it in advance). 💡  Tip : You can
+* Book a meeting room (and let people know about it in advance). 💡  Tip : You can
   use a shared calendar for meeting rooms or some room booking software
 
 During
