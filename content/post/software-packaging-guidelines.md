@@ -190,7 +190,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-* Experimantal support for Uranus expedition
+* Experimental support for Uranus expedition
 
 ## [0.1.1] - 2048-01-12
 
