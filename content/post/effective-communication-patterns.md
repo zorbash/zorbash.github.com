@@ -22,7 +22,7 @@ For your organisation and its teams to be truly agile and effective you should b
 
 
 Your organisation is spending vast resources to optimise various parts of the technical
-infrastructure to help your developers to work better.
+infrastructure to help your developers work better.
 We all spend a fair amount of time communicating and the quality of the deliverable
 result of our work is largely affected by the accuracy and completeness of such communication.
 
