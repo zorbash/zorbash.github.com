@@ -49,7 +49,7 @@ and
 
 > A team will perform well only if peak performance is elicited from the individuals in it.
 
-I'm arguing that either you are a designer / developer / tech lead or
+I'm arguing that no matter if you are a designer / developer / tech lead or
 manager, helping to build such a system is a step to augment the output
 of the team.
 
@@ -107,7 +107,10 @@ media to be used by team members. This post covers the following:
 
 ### 1. Pick a Project Management Application
 
-[Jira][jira], [Trello][trello], [Asana][asana], [Phabricator][phabricator], pick one, then make sure people know how to interact with it. I bet you work with very smart people, but for such integral processes you should have a short manual so that they are feel with it.
+[Jira][jira], [Trello][trello], [Asana][asana], [Phabricator][phabricator], pick one,
+then make sure people know how to interact with it.
+I bet you work with very smart people, but for such integral processes you should
+have a short manual so that they are feel comfortable with it.
 
 Common questions you can consider answering:
 
@@ -151,12 +154,12 @@ Let's focus on what all the cool kids are using these days; Slack.
 
 One thing you should definitely try is to convince people not to use DMs.
 You cannot forbid them completely, but they don't scale that well and
-it yet another place where office politics might be brewing.
+it is yet another place where office politics might be brewing.
 
 #### When to say something on Slack?
 
 Use it for volatile information or emergencies. One should not feel obliged to
-read every message in any of the numerous channels invited.
+read every message in any of the numerous channels being invited.
 
 #### When to use @here and @channel
 
@@ -165,8 +168,8 @@ read every message in any of the numerous channels invited.
 @channel notifies all members of a channel, whether they are active or away.
 ```
 
-As documented by the Slack [guides][slack-guides], you should use them sparingly.
-If people are abusing them, remind them to get them on track.
+As documented in the Slack [guides][slack-guides], you should use them sparingly.
+If people are abusing them, remind them and get them to conform.
 
 #### Channels
 
@@ -204,7 +207,7 @@ channels.
 
 [source][emojis-hn-comment]
 
-Let’s admit it, emojis are fun. Work can be fun too. Sprinkling emojis all over your messages on slack at work won’t make work fun though. There are ways to enjoy make yourself enjoy work more, or find the right employment to maximize your happiness. That's way beyond the scope of this post though. 🤐
+Let’s admit it, emojis are fun. Work can be fun too. Sprinkling emojis all over your messages on slack at work won’t make work fun though. There are ways to enjoy make yourself enjoy work more, or find the right employment to maximize your happiness. That's way beyond the scope of this post though 🤐.
 
 **Do**
 
@@ -214,7 +217,7 @@ zorbash> :shipit: We’re releasing the much expected feature of anti-anti-gravi
 
 **Don't**
 
-Avoid using emojis in design documents and release specific documents (release coordination docs, changelogs) or any document which might be read during some firefighting process.
+Avoid using emojis in design documents and release-specific documents (release coordination docs, changelogs) or any document which might be read during some firefighting process.
 
 Avoid using them in commit messages. They’re meant to be succinct, unambiguous and above all greppable.
 
@@ -242,7 +245,8 @@ When in doubt, don't use an emoji.
 <br/>
 
 This section isn't about concurrency primitives. I'm talking about Slack
-threads. They are ideal when you wish to ask a question, or have a quick discussion, keeping it contained. Why would you want to contain it? Because for people not involved it’s noise.
+threads. They are ideal when you wish to ask a question, or have a quick discussion, keeping it contained. Why would you want to contain it? Because for people not involved, it’s noise. You'd be right to wonder if there's ever 
+any escape from noise in the modern workplace anyway? [reference][negativland]
 
 **Do**
 
@@ -250,7 +254,7 @@ threads. They are ideal when you wish to ask a question, or have a quick discuss
 zorbash> Good people of #support-devops, I just discovered that the X-Strict-Allow-Kittens header is included twice in all our responses. Is there any chance this is intended? (thread)
 ```
 
-When you start a question thread and it gets a conclusive working answer, if possible edit the head message of the thread with a `[resolved]` tag, so that others know you no longer need they don’t have to react and read it. You may also use an emoji like ✅.
+When you start a question thread and it gets a conclusive working answer, if possible edit the head message of the thread with a `[resolved]` tag, so that others know you no longer need help and they don’t have to react and read it. You may also use an emoji like ✅.
 
 **Don't**
 
@@ -291,7 +295,7 @@ Is it OK to add bots to channels? Maybe. Ideally bots should have their own chan
 **Do**
 
 
-Use chatops to help complete otherwise tedious tasks like creating a support ticket for a specific team. Or answering a question for when did the last deployment of some service take place.
+Use chatops to help complete otherwise tedious tasks like creating a support ticket for a specific team. Or to answer a question for when did the last deployment of some service take place.
 
 **Don't**
 
@@ -415,3 +419,4 @@ All the reading resources above are also available as a [list][tefter-list] on T
 [google-postmortem]: https://landing.google.com/sre/book/chapters/postmortem.html
 [danluu-postmortems]: https://github.com/danluu/post-mortems
 [owasp-ssdlc]: https://www.owasp.org/index.php/OWASP_Secure_Software_Development_Lifecycle_Project
+[negativland]: https://www.youtube.com/watch?v=V4dY-XxwGcI
