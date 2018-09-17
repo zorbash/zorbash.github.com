@@ -145,10 +145,10 @@ This is a tricky one, but I'd say at most a day. It is tricky because we
 set it any lower we're risking sacrificing focus by having people to
 constantly looking at their inbox.
 
-### 2. Realtime Conversation Application
+### 2. Realtime Chat Application
 
 This can be an application like [Slack][slack], [irc][irc], [rocket
-chat][rocket-chat].
+chat][rocket-chat], or [other][chat-tools].
 
 Let's focus on what all the cool kids are using these days; Slack.
 
@@ -420,3 +420,4 @@ All the reading resources above are also available as a [list][tefter-list] on T
 [danluu-postmortems]: https://github.com/danluu/post-mortems
 [owasp-ssdlc]: https://www.owasp.org/index.php/OWASP_Secure_Software_Development_Lifecycle_Project
 [negativland]: https://www.youtube.com/watch?v=V4dY-XxwGcI
+[chat-tools]: https://github.com/cjbarber/ToolsOfTheTrade#group-communicationchat-tools
