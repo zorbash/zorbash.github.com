@@ -3,7 +3,7 @@ author = "Dimitris Zorbas"
 date = "2018-10-23"
 draft = false
 title = "100 Things a Software Architect Should Know"
-image = "images/posts/250-things/architect.png"
+image = "images/posts/100-things/architect.png"
 tags = ["abstract", "programming"]
 comments = true
 share = true
@@ -11,7 +11,7 @@ share = true
 
 A very short list of things a software architect should know:
 
-<!--more--> 
+<!--more-->
 
 1. The zeros
 1. The nils
@@ -30,11 +30,11 @@ A very short list of things a software architect should know:
 1. How to authorise
 1. How to memoize
 1. Talk to ducks
-1. Start from a blank slate
-1. Braille
+1. Write in Braille
 1. Admire hexagons
 1. Numbers `> 41 and < 43`
 1. Rigorous negotiations
+1. Remember that hope is not a strategy
 1. Carpal Tunnel Syndrome
 1. Prime factorisation
 1. Be polite to your users
@@ -44,11 +44,11 @@ A very short list of things a software architect should know:
 1. Code is never completed
 1. The law of diminishing returns
 1. It really, doesn't have to be crazy at work
-1. Not all operations can be reversed
 1. It's not urgent because someone says so
+1. Not all operations can be reversed
 1. Be curious what the user thinks and feels
 1. Optimising safely
-1. How to shuffle stuff
+1. How to sort and shuffle stuff
 1. Deploy - then forget - is not neglect
 1. Build systems, not apps
 1. Poetry is literate programming for human emotions
@@ -70,15 +70,15 @@ A very short list of things a software architect should know:
 1. Who Jeff Dean is and how he would solve your problem
 1. Code, leads to more code, not solutions
 1. To talk about killing children, discreetly in public
-1. How does the user feel when the code is right
 1. Identify big stones
-1. Get enough rest
+1. Get plenty of rest
 1. Relays
 1. Be alarmed for 0days
-1. Prepare for disaster
 1. Plan capacity
+1. Prepare for disaster
 1. See the topologies in the starry night sky
-1. Lego is made from plastic
+1. How does the user feel when the code is right
+1. Remember that Lego™️ is made from plastic
 1. How to draw shapes on a board
 1. How to tell if your colleague is struggling from burn out
 1. You also need timeouts
@@ -105,10 +105,10 @@ A very short list of things a software architect should know:
 1. Avoid dividing by zero, even if you're a small practical horse
 1. Many different types of hashes
 1. Pomodoro is not just a sauce
+1. Avoid using the work "just"
 1. How to identify a GNU at the zoo
 1. Notice turnstiles and be curious about traffic signalling and flow
-1. Avoid using the work "just"
-1. When to benchnmark
+1. When to benchmark
 1. When to test
 1. When to cheat
 1. To not trust clocks
