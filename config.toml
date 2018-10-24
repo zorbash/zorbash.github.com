@@ -4,7 +4,7 @@ PygmentsCodeFences = true
 PygmentsUseClasses = true
 DisqusShortname = "zorbash-blog"
 
-copyright = "All rights reserved - 2017"
+copyright = "All rights reserved - 2018"
 theme = "hockus"
 baseurl = "https://zorbash.com/"
 
