@@ -380,6 +380,7 @@ List and explain any common team specific terms which you deem useful for cross-
 * [whatmatters.com][whatmatters]
 * [When Coffee and Kale Compete by Alan Klement][coffee-kale]
 * [Top Takeways from Andy Grove's "High Output Management"][top-takeaways]
+* [Gitlab's Communication Handbook][gitlab-communication]
 * [A list of postmortems by Dan Luu][danluu-postmortems]
 
 All the reading resources above are also available as a [list][tefter-list] on Tefter.
@@ -421,3 +422,4 @@ All the reading resources above are also available as a [list][tefter-list] on T
 [owasp-ssdlc]: https://www.owasp.org/index.php/OWASP_Secure_Software_Development_Lifecycle_Project
 [negativland]: https://www.youtube.com/watch?v=V4dY-XxwGcI
 [chat-tools]: https://github.com/cjbarber/ToolsOfTheTrade#group-communicationchat-tools
+[gitlab-communication]: https://about.gitlab.com/handbook/communication/
