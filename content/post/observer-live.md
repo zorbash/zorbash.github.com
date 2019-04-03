@@ -34,11 +34,11 @@ have a look at some previous posts:
 ### Next Steps
 
 The port is ~40% done at this point and a few people have already
-expressed their desire to contribute on Twitter.
+expressed, on Twitter, their desire to contribute.
 I'll make sure to shape a roadmap in the form of GitHub issues.
 If there are people out there who'd like to use this for their apps from a package,
-please let me know in the comments or Twitter ([_@zorbash][twitter-me]). Not quite
-sure how to package a live view yet 😬.
+please let me know in the comments or Twitter ([@_zorbash][twitter-me]). Not quite
+sure how to package a live view yet though 😬.
 
 ### Opus
 
@@ -54,7 +54,7 @@ phoenix framework team consistently delivers such refreshing features
 without sacrificing stability, performance or developer happiness.
 
 
-Next week I'll be at ElixirConf EU, come talk to me about LiveView and
+Next week I'll be attending ElixirConf EU, come talk to me about LiveView and
 the stuff you're building using it and Elixir in general.
 
 <style>
