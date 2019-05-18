@@ -840,3 +840,4 @@ Please contact me on [twitter][me-twitter], or in the comments, or [submit a PR]
 [morphdom]: https://github.com/patrick-steele-idem/morphdom
 [liveview-debounce]: https://github.com/phoenixframework/phoenix_live_view/issues/4
 [me-twitter]: https://twitter.com/_zorbash
+[phoenix-pubsub]: https://github.com/phoenixframework/phoenix_pubsub
