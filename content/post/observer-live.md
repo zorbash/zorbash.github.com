@@ -57,6 +57,9 @@ without sacrificing stability, performance or developer happiness.
 Next week I'll be attending ElixirConf EU, come talk to me about LiveView and
 the stuff you're building using it and Elixir in general.
 
+For more demos, guides and tutorials about LiveView, check out [this
+list][liveview-tefter-list].
+
 <style>
 .main-header {
   background-size: 32% auto;
@@ -77,4 +80,4 @@ the stuff you're building using it and Elixir in general.
 [demo]: https://liveview.zorbash.com
 [phoenix-websockets-under-a-microscope]: {{< relref "post/phoenix-websockets-under-a-microscope.md" >}}
 [twitter-me]: https://twitter.com/_zorbash
-
+[liveview-tefter-list]: https://tefter.io/zorbash/lists/phoenix-liveview-examples
