@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  {{ with .Site.Params.twitter }}<section class="twitter"><a class="icon-twitter" href="https://twitter.com/{{ . }}"> {{ . }}</a></section>{{ end }}
+  {{ with .Site.Params.facebook }}<section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/{{ . }}"> {{ . }}</a></section>{{ end }}
+  <section class="copyright">&copy; {{ now.Format "2006" }} {{ .Site.Title }}</section>
+</footer>
+<!-- custom js -->
+{{ range .Site.Params.customJS }}
+  <script src="{{ "/js/" | relURL }}{{ . }}"></script>
+{{ end }}

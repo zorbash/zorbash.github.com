@@ -3,7 +3,7 @@ author = "Dimitris Zorbas"
 date = "2019-04-16"
 draft = false
 title = "ElixirConf.EU 2019"
-image = "images/posts/elixirconfeu2018/logo.png"
+image = "/images/posts/elixirconfeu2018/logo.png"
 tags = ["conference", "erlang", "elixir", "prague"]
 comments = true
 share = true
@@ -22,14 +22,13 @@ after, I realised I didn't visit most of the landmarks that I was
 planning to. Looks like I was immersed in the vibe of the city and had a
 great time there 😀.
 
-</br>
-
-<div class="polaroid">
+<!--<div class="polaroid">-->
+<figure class="polaroid">
   <img src="/images/posts/elixirconfeu2019/prague_resized.jpg" class="img-medium" alt="prague">
-  <p>View over the Vltava river</p>
-</div>
-
-</br>
+  <!--<p>View over the Vltava river</p>-->
+  <figcaption>View over the Vltava river</figcaption>
+</figure>
+<!--</div>-->
 
 ### The Fun Stuff
 
@@ -135,7 +134,7 @@ over from scratch.
 
 Q. Is the goal to replace RabbitMQ or Kafka?
 
-No, it's to work with them and become very good friends
+No, it's to work with them and become very good friends.
 
 ### Rewritting Critical Software in Elixir - [Renan Ranelli][profile-Ranelli]
 

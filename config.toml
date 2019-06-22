@@ -5,29 +5,29 @@ PygmentsUseClasses = true
 DisqusShortname = "zorbash-blog"
 
 copyright = "All rights reserved - 2018"
-theme = "hockus"
+theme = "hockus2"
 baseurl = "https://zorbash.com/"
 
 [[menu.main]]
-  name = "Github Repos"
-  pre = "<h3>Follow me</h3>"
-  url = "https://github.com/zorbash"
+  name = "About"
+  #pre = "<h3>Follow me</h3>"
+  url = "/about"
   weight = 100
 
-[[menu.main]]
-  name = "Twitter Timeline"
-  url = "https://twitter.com/_zorbash"
-  weight = 101
+#[[menu.main]]
+  #name = "Twitter Timeline"
+  #url = "https://twitter.com/_zorbash"
+  #weight = 101
 
-[[menu.main]]
-  name = "Goodreads Profile"
-  url = "https://www.goodreads.com/user/show/13437694-dimitrios"
-  weight = 102
+#[[menu.main]]
+  #name = "Goodreads Profile"
+  #url = "https://www.goodreads.com/user/show/13437694-dimitrios"
+  #weight = 102
 
-[[menu.main]]
-  name = "SpeakerDeck Profile"
-  url = "https://speakerdeck.com/zorbash"
-  weight = 103
+#[[menu.main]]
+  #name = "SpeakerDeck Profile"
+  #url = "https://speakerdeck.com/zorbash"
+  #weight = 103
 
 [params]
   description = "Code spells, smells and sourcery"

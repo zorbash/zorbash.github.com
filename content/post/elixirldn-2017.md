@@ -3,7 +3,7 @@ author = "Dimitris Zorbas"
 date = "2017-08-20"
 draft = false
 title = "Elixir.LDN 2017"
-image = "images/posts/elixirldn2017/logo.png"
+image = "/images/posts/elixirldn2017/logo.png"
 tags = ["open-source", "conference", "erlang", "elixir", "london"]
 comments = true
 share = true
@@ -136,10 +136,10 @@ end
 
 </br>
 
-<div class="polaroid">
+<figure>
   <img src="/images/posts/elixirldn2017/lpil2.png" class="img-medium" alt="louis pilfold">
-  <p>Louis "getting pretty serious"</p>
-</div>
+  <figcaption>Louis "getting pretty serious"</figcaption>
+</figure>
 
 </br>
 
@@ -261,10 +261,10 @@ I can only remember a talk about [elchemy][elchemy] (Elm -> Elixir) by [Krzyszto
 
 </br>
 
-<div class="polaroid">
+<figure>
   <img src="/images/posts/elixirldn2017/after_party_resized.jpg" class="img-medium" alt="elixirldn after-party">
-  <p>The venue of the after-party</p>
-</div>
+  <figcaption>The venue of the after-party</figcaption>
+</figure>
 
 </br>
 
