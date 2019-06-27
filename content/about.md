@@ -9,6 +9,8 @@ share = true
 I'm an Athenian G<s>r</s>eek software engineer who lives in London.
 When I'm not busy making stuff, I'm breaking stuff.
 
+Public Key: B2FC 1D21 EAD4 974E 9139 761C D122 8308 112F 8610
+
 ## Contact
 
 * [email](mailto:dimitrisplusplus@gmail.com)
@@ -18,7 +20,7 @@ When I'm not busy making stuff, I'm breaking stuff.
 
 * [My Twitter](https://twitter.com/_zorbash)
 * [GitHub](https://github.com/zorbash)
-* [Me on Tefter](https://tefter.io/zorbash)
+* [Tefter Bookmarks](https://tefter.io/zorbash)
 * [Goodreads](https://www.goodreads.com/user/show/13437694-dimitrios)
 * [Spotify](https://open.spotify.com/user/1199970281?si=7uPPJY3lQWmT8dAdyvzwSw)
 * [Speakerdeck](https://speakerdeck.com/zorbash)
@@ -39,11 +41,15 @@ Link: https://tefter.io
 
 Privacy-focused social bookmarking service.
 
+Tech: Ruby, Rails, Elixir, React, PostgreSQL, ElasticSearch, Redis
+
 ### Kitto
 
 Link: https://github.com/kittoframework/kitto
 
 A framework to build interactive dashboards.
+
+Tech: Elixir, React, Webpack
 
 ### ObserverLive
 
@@ -54,6 +60,8 @@ using Phoenix's [LiveView](https://github.com/phoenixframework/phoenix_live_view
 
 Read more about it [here](/posts/observer-live)
 
+Tech: Elixir, Phoenix, LiveView
+
 ### Sourcery-ci
 
 Link: https://sourcery-ci.org
@@ -61,11 +69,15 @@ Link: https://sourcery-ci.org
 An app which checks whether an open-source repository conforms to
 several release conventions.
 
+Tech: Elixir, Phoenix, WebSockets, PostgreSQL
+
 ### Opus
 
 Link: https://github.com/zorbash/opus
 
 A library for pluggable business logic components in Elixir.
+
+Tech: Elixir
 
 ### ExSchedule
 
@@ -73,7 +85,11 @@ Link: https://github.com/quiqupltd/ex_schedule
 
 A library to run recurring jobs in Elixir.
 
+Tech: Elixir
+
 ### Recyclops (WIP)
 
 I'm building a smart recycling bin (hello 👋 [@internetofshit](https://twitter.com/internetofshit)) which detects recycling labels and
 only lets you dispose items only when they're really recyclable.
+
+Tech: Elixir, Nerves, Raspberry PI, Camera
