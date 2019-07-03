@@ -37,13 +37,21 @@ Public Key: B2FC 1D21 EAD4 974E 9139 761C D122 8308 112F 8610
 
 ### Tefter.io
 
+![tefter-banner](/images/about/tefter_banner1.jpg)
+
 Link: https://tefter.io
 
 Privacy-focused social bookmarking service.
 
 Tech: Ruby, Rails, Elixir, React, PostgreSQL, ElasticSearch, Redis
 
+#### Press
+
+* [interview (in greek) - epixeiro.gr](http://www.epixeiro.gr/article/130218)
+
 ### Kitto
+
+![kitto-logo](/images/about/kitto.png)
 
 Link: https://github.com/kittoframework/kitto
 
@@ -52,6 +60,8 @@ A framework to build interactive dashboards.
 Tech: Elixir, React, Webpack
 
 ### ObserverLive
+
+<img class="observer_live" src="/images/about/observer_live.png"/>
 
 Link: https://liveview.zorbash.com
 
@@ -87,9 +97,25 @@ A library to run recurring jobs in Elixir.
 
 Tech: Elixir
 
+### Libelection
+
+![libelection-logo](/images/about/libelection.png)
+
+Link: https://github.com/quiqupltd/libelection
+
+Library to perform leader election in a cluster of containerized Elixir nodes.
+
+Tech: Elixir
+
 ### Recyclops (WIP)
 
 I'm building a smart recycling bin (hello 👋 [@internetofshit](https://twitter.com/internetofshit)) which detects recycling labels and
 only lets you dispose items only when they're really recyclable.
 
 Tech: Elixir, Nerves, Raspberry PI, Camera
+
+<style>
+  img.observer_live {
+    height: 325px;
+  }
+</style>
