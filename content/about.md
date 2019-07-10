@@ -9,6 +9,8 @@ share = true
 I'm an Athenian G<s>r</s>eek software engineer who lives in London.
 When I'm not busy making stuff, I'm breaking stuff.
 
+My guilty pleasure is that I really enjoy writing quality documentation.
+
 Public Key: B2FC 1D21 EAD4 974E 9139 761C D122 8308 112F 8610
 
 ## Contact
