@@ -1436,7 +1436,7 @@ A handful of WebSocket related traces you can attempt with recon are:
 
 ```elixir
 # Trace the next 10 calls to pg2.get_members/1 and show the return value
-:recon_trace {:pg2, :get_members, [{:_, [], [{:return_trace}]}]}, 10
+:recon_trace.calls {:pg2, :get_members, [{:_, [], [{:return_trace}]}]}, 10
 
 #=> 1:15:03.621778 <0.706.0> pg2:get_members({phx,'Elixir.Numbers.PubSub'})
 #=> 1:15:03.621956 <0.706.0> pg2:get_members/1 --> [<0.279.0>]
