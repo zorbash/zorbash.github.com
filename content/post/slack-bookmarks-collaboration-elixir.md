@@ -200,7 +200,8 @@ pipelines to read their documentation.
 
 ## Closing Thoughts
 
-If you're using Opus, let me know, I'd be glad to hear your feedback.
+I hope that this post gives an idea of the features of Opus and I promise to cover the next of them in a following post.
+If you're using Opus, I'd be glad to hear your feedback.
 
 Do you represent an open-source community and you're interested to try
 out Tefter Organizations? Let me know and we'll add you to an unlimited
