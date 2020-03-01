@@ -31,3 +31,6 @@ baseurl = "https://zorbash.com/"
 
 [params.social]
   twitter = "_zorbash"
+
+[markup.goldmark.renderer]
+  unsafe = true
