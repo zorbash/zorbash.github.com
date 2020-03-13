@@ -15,8 +15,9 @@ install `htop` on a new machine, am I right?
 My plan was to build something that I'd use daily and other people would potentially
 find useful. Therefore I decided to build a cli app for [Tefter][tefter].
 
-It's built on [Elixir][elixir] and [Ratatouille][rata] and it's open-source. Check out
-[the source][source].
+It's built on [Elixir][elixir] and [Ratatouille][rata] and it's open-source. 
+
+Check out [the source][source] or [download][download] and try it.
 
 <img src="/images/posts/building_command_line_applications_with_elixir/cli_demo.png" class="img-medium">
 
@@ -506,3 +507,4 @@ kbd {
 [bottom_bar]: https://github.com/tefter/cli/blob/master/lib/tefter_cli/views/components/bottom_bar.ex
 [organisations]: https://guides.tefter.io/features/team_collaboration/
 [lists]: https://guides.tefter.io/features/lists/
+[download]: https://github.com/tefter/cli/releases
