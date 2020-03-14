@@ -52,7 +52,7 @@ API of [Ratatouille][rata] and eager to overcome potential hurdles, once again I
 
 Take a glimpse of how the app behaves:
 
-<video controls width="830">
+<video controls>
   <source src="/images/posts/building_command_line_applications_with_elixir/blog_demo.mp4" type="video/mp4">
   Sorry, your browser doesn't support embedded videos.
 </video>
@@ -118,7 +118,7 @@ encoded in the query params. The app then proceeds to create the
 
 See it in action:
 
-<video controls width="830">
+<video controls>
   <source src="/images/posts/building_command_line_applications_with_elixir/auth.webm" type="video/webm">
   Sorry, your browser doesn't support embedded videos.
 </video>
@@ -294,7 +294,7 @@ In the command-line app you can:
 
 Example:
 
-<video controls width="830">
+<video controls>
   <source src="/images/posts/building_command_line_applications_with_elixir/aliases_demo.webm" type="video/webm">
   Sorry, your browser doesn't support embedded videos.
 </video>
@@ -446,8 +446,8 @@ Ratatouille is fantastic, but there are a few things that could be improved:
 
 # Thank you
 
-I want to thank [ndreynolds][ndreynolds] for creating Ratatouille and I hope people will gain something 
-by reading this post and the source of the app and hopefully provide feedback!
+I want to thank [ndreynolds][ndreynolds] for creating Ratatouille and I hope people will gain something
+by reading this post and the source of the app and provide feedback!
 
 <style>
 .main-header {
@@ -477,6 +477,10 @@ kbd {
   border: 1px solid #d1d5da;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+video {
+  width: 95%;
 }
 </style>
 
