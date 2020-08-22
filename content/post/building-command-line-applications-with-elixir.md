@@ -17,9 +17,15 @@ find useful. Therefore I decided to build a cli app for [Tefter][tefter].
 
 It's built on [Elixir][elixir] and [Ratatouille][rata] and it's open-source. 
 
-Check out [the source][source] or [download][download] and try it.
-
 <img src="/images/posts/building_command_line_applications_with_elixir/cli_demo.png" class="img-medium">
+
+Check out [the source][source] or [download][download] and try it or
+install via brew.
+
+```shell
+brew tap tefter/homebrew-cli
+brew install tefter
+```
 
 # Why Elixir
 
@@ -354,6 +360,13 @@ They both use `mix release` to prepare a tarball which bundles the Erlang VM.
 The Linux script leverages Docker to ensure that a release can be built
 even on a non-Linux machine.
 
+We also maintain a formula to install via Homebrew [here][tefter-tap].
+
+```shell
+brew tap tefter/homebrew-cli
+brew install tefter
+```
+
 # The framework - Ratatouille
 
 Ratatouille is impressive. It makes you want to write something in it
@@ -512,3 +525,4 @@ video {
 [organisations]: https://guides.tefter.io/features/team_collaboration/
 [lists]: https://guides.tefter.io/features/lists/
 [download]: https://github.com/tefter/cli/releases
+[tefter-tap]: https://github.com/tefter/homebrew-cli
