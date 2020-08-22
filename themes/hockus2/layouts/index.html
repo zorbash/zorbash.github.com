@@ -1,6 +1,6 @@
 {{ define "main" }}
   <main class="content" role="main">
-    {{ $paginator := .Paginate (where .Pages "Type" "post") }}
+    {{ $paginator := .Paginate (where .Paginator.Pages ".Type" "post") }}
     <div class="extra-pagination">
       {{ partial "pagination.html" . }}
     </div>
