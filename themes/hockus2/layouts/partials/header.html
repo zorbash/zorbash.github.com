@@ -18,6 +18,8 @@
     {{ range .Site.Menus.main }}
       <a class="nav- {{ if $currentPage.IsMenuCurrent "main" . }}nav-current{{ end }}" role="presentation" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
     {{ end }}
-    <a class="subscribe-button icon-feed" href="/index.xml"></a>
+    <a class="icon-github-circled" href="https://github.com/zorbash"></a>
+    <a class="icon-twitter" href="https://twitter.com/_zorbash"></a>
+    <a class="subscribe-button icon-rss" href="/index.xml"></a>
   </div>
 </header>
