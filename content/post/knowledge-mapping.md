@@ -3,8 +3,8 @@ author = "Dimitris Zorbas"
 date = "2020-08-23"
 title = "Knowledge Mapping"
 image = "/images/posts/knowledge_map/banner_cropped.jpg"
-tags = ["learning", "education", "visualization", "javascript",
-"ruby"]
+tags = ["learning", "education", "visualization", "javascript", "ruby"]
+image = "/images/posts/knowledge_map/banner_cropped.png"
 comments = true
 share = true
 +++
@@ -15,25 +15,33 @@ _How do we know what we know and what is there that we should know?_
 
 <!--more-->
 
-Video games like Age of Empires, Civilisation, both favourites of mine and others have the concept of technology trees.
+Video games like Age of Empires, Civilisation and others have the concept of technology trees.
 
 <img src="/images/posts/knowledge_map/aoe.jpg" class="img-medium">
 
 I study a lot, where should I spend my time? What should I read next? Is my knowledge broad enough?
-I’ve used goodreads quite extensively, it’s great to be able to discover new books to read, mark your progress, make friends and such.
+I’ve used Goodreads quite extensively, it’s great to discover new books to read, mark your progress,
+make friends and such.
 
-Nowadays there’s so much information readily available but not that many tools to organise and allocate your “research points”.
+Nowadays there’s so much information readily available, but not that many tools to help you
+organise and allocate your “research points”.
 
 ## Learning Together
 
-The recent COVID-19 pandemic surfaced the shortcomings of humanity to work together to solve fundamental healthcare issues. Some “experts” rushed to call it a black swan despite it clearly not being one ([read more][nyorker-taleb]).
+The recent COVID-19 pandemic surfaced the shortcomings of humanity to work together
+to solve fundamental healthcare issues.
+Some “experts” rushed to call it a black swan, despite it clearly not being one ([read more][nyorker-taleb]).
 
 Thousands of Americans are victims of the opioid crisis and countless ones
-are losing their money in the wild-west of unregulated fintech companies with mottos like “anyone can be a trader” or in cryptocurrencies 🙃.
+are shoveling their money in the wild-west of unregulated fintech companies
+with mottos like “anyone can be a trader” or in cryptocurrencies 🙃.
 
-The media promote optimising for the short-term making us think we’re the last generation to walk the planet. Our countries are involved in wars, we fund wars with our taxes, yet the disasters that war brings seem so remote.
+The media promote optimising for the short-term, making us think we’re the last generation to walk the planet.
+Our countries are involved in wars, we fund wars with our taxes, yet the disasters
+that war brings always seem so remote.
 
-How do we respond? We **educate** ourselves, we **talk**, we **act**. A university degree or a code bootcamp might help you land a job, but securing your freedom of thought it’s a never-ending struggle.
+How do we respond? We **educate** ourselves, we **talk**, we **act**. A university degree or a code
+bootcamp might help you land a job, but securing your freedom of thought is a never-ending struggle.
 
 ## Learning to Learn
 
