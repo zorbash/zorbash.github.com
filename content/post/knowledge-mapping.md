@@ -2,12 +2,11 @@
 author = "Dimitris Zorbas"
 date = "2020-08-23"
 title = "Knowledge Mapping"
-image = "/images/posts/knowledge_map/banner_cropped.png"
+image = "/images/posts/knowledge_map/banner_cropped.jpg"
 tags = ["learning", "education", "visualization", "javascript",
 "ruby"]
 comments = true
 share = true
-draft = true
 +++
 
 _What do **I** know? What do **we** know?_
@@ -18,7 +17,7 @@ _How do we know what we know and what is there that we should know?_
 
 Video games like Age of Empires, Civilisation, both favourites of mine and others have the concept of technology trees.
 
-<img src="/images/posts/knowledge_map/aoe.png" class="img-medium">
+<img src="/images/posts/knowledge_map/aoe.jpg" class="img-medium">
 
 I study a lot, where should I spend my time? What should I read next? Is my knowledge broad enough?
 I’ve used goodreads quite extensively, it’s great to be able to discover new books to read, mark your progress, make friends and such.
@@ -58,7 +57,7 @@ Learning is a continuous process and universities should not extinguish your pas
 For me, receiving my degree wasn't something to celebrate, more like a warrant to stay away from the
 supposed mecca of learning.
 
-<img src="/images/posts/knowledge_map/university.webp" class="img-medium">
+<img src="/images/posts/knowledge_map/university.jpg" class="img-medium">
 
 Fortunately in the digital age there are plenty of choices when it comes to expanding your knowledge.
 [Khanacademy][khanacademy], [Coursera][coursera], [Udacity][udacity] to name a few.
@@ -93,7 +92,7 @@ Well, I couldn't help it and wrote some code to support it.
 Khanacademy used to have a [knowledge map][ka-map] feature which I found
 inspiring. Browsing a universe of infinite topics, continuing education ftw.
 
-<img src="/images/posts/knowledge_map/ka_map.png" class="img-medium">
+<img src="/images/posts/knowledge_map/ka_map.jpg" class="img-medium">
 
 ### Building my Knowledge Map
 
@@ -101,7 +100,7 @@ So, I decided to build my own map and needed to bootstrap it somehow. I
 quickly extracted, cleaned and analysed the tags of my Tefter bookmarks.
 For the uninitiated, [Tefter](https://tefter.io) is a social bookmarking app I use heavily and I also develop 🤠.
 
-<img src="/images/posts/knowledge_map/banner.png" class="img-medium">
+<img src="/images/posts/knowledge_map/banner.jpg" class="img-medium">
 
 On the graph, tags are nodes and edges connect topics when they appear as tags on the same bookmark.
 
