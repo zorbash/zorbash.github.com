@@ -61,7 +61,7 @@ Universities play the role of gatekeepers of knowledge and the perpetuation of c
 Your studies have a certain duration and you get a degree. While such a concept is valuable to maintain
 the status quo and keep the economy going it doesn't really seem to be about knowledge.
 Learning is a continuous process and universities should not extinguish your passion for knowledge in exchange for a degree.
-For me, receiving my degree wasn't something to celebrate, more like a warrant to stay away from the
+For me, receiving my degree wasn't something to celebrate. It was rather a warrant to stay away from the
 supposed mecca of learning.
 
 <img src="/images/posts/knowledge_map/university.jpg" class="img-medium">
