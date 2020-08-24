@@ -4,7 +4,6 @@ date = "2020-08-23"
 title = "Knowledge Mapping"
 image = "/images/posts/knowledge_map/banner_cropped.jpg"
 tags = ["learning", "education", "visualization", "javascript", "ruby"]
-image = "/images/posts/knowledge_map/banner_cropped.png"
 comments = true
 share = true
 +++
