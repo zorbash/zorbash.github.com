@@ -114,11 +114,9 @@ A very short list of things a software architect should know:
 1. To not trust clocks
 1. Identify system boundaries
 
-Inspired by [Michael Sorkin's - 250 things an architect should know][sorkin].
+Inspired by [Michael Sorkin's - 250 things an architect should know](https://www.readingdesign.org/250-things).
 
 <style>
 .main-header {
   background-size: 32% auto;
 }
-
-[sorkin]: https://www.readingdesign.org/250-things
