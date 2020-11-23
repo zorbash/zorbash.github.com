@@ -89,23 +89,22 @@ code, tt, pre {
     padding: 1px 3px;
     font-family: Inconsolata, monospace, sans-serif;
     white-space: pre-wrap;
-    font-size: 1rem;
     border: none;
     background: none;
 }
 
 pre {
-  /*padding: 0 2em;*/
   padding: 10px;
   line-height: 1.3em;
 }
 
 code, tt {
-  /*font-weight: 500;*/
+  font-weight: 500;
 }
 
 pre code {
-
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 blockquote {
