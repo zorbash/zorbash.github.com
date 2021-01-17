@@ -1,7 +1,7 @@
 +++
 author = "Dimitris Zorbas"
 date = "2021-01-16"
-draft = true
+draft = false
 title = "sidekiq-dry"
 image = "/images/posts/sidekiq_dry/loading_bay.jpg"
 tags = ["open-source", "dry-rb", "rails", "ruby", "sidekiq"]
