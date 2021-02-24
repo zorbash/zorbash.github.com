@@ -174,6 +174,40 @@ Sidekiq.configure_server do |config|
 end
 ```
 
+## Rubocop
+
+Finally, you may set up a custom Rubocop rule like the following to
+nudge developers use Dry::Struct arguments.
+
+```ruby
+module RuboCop
+  module Cops
+    module Jobs
+      class Arguments < RuboCop::Cop::Cop
+        MAX_JOB_ARGUMENTS = 3
+        MSG = 'Replace %<args_count>d arguments with a single Dry::Struct'.freeze
+
+        def on_args(node)
+          return unless perform_method?(node.parent)
+
+          args_count = node.children.size
+
+          return if args_count <= MAX_JOB_ARGUMENTS
+
+          add_offense(node.parent, message: MSG % { args_count: args_count })
+        end
+
+        private
+
+        def_node_matcher :perform_method?, <<~PATTERN
+          (def :perform (args ...) ...)
+        PATTERN
+      end
+    end
+  end
+end
+```
+
 ## Further Reading
 
 * [dry-rb][dry-rb]
