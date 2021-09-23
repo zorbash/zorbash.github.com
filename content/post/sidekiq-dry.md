@@ -163,13 +163,13 @@ Configure `Sidekiq` to use the middlewares of the gem:
 
 Sidekiq.configure_client do |config|
   config.client_middleware do |chain|
-    chain.add Sidekiq::Dry::Client::SerializationMiddleware
+    chain.prepend Sidekiq::Dry::Client::SerializationMiddleware
   end
 end
 
 Sidekiq.configure_server do |config|
   config.client_middleware do |chain|
-    chain.add Sidekiq::Dry::Client::SerializationMiddleware
+    chain.prepend Sidekiq::Dry::Client::SerializationMiddleware
   end
   config.server_middleware do |chain|
     chain.add Sidekiq::Dry::Server::DeserializationMiddleware
