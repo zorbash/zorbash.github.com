@@ -109,6 +109,15 @@ Library to perform leader election in a cluster of containerized Elixir nodes.
 
 Tech: Elixir
 
+### Bookworm
+
+Link: https://github.com/zorbash/bookworm
+
+A command-line tool for offline access of notes and Kindle highlights.
+It also syncs highlights to Notion.
+
+Tech: Ruby
+
 ### Recyclops (WIP)
 
 I'm building a smart recycling bin (hello 👋 [@internetofshit](https://twitter.com/internetofshit)) which detects recycling labels and
