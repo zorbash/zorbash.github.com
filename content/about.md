@@ -109,12 +109,14 @@ Library to perform leader election in a cluster of containerized Elixir nodes.
 
 Tech: Elixir
 
-### Bookworm
+### Bookworm 🪱📚
 
 Link: https://github.com/zorbash/bookworm
 
 A command-line tool for offline access of notes and Kindle highlights.
 It also syncs highlights to Notion.
+
+Check out: https://github.com/zorbash/notes for my notes generated using this tool.
 
 Tech: Ruby
 
