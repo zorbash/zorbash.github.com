@@ -59,7 +59,7 @@ Link: https://github.com/kittoframework/kitto
 
 A framework to build interactive dashboards.
 
-Tech: Elixir, React, Webpack
+Tech: [Elixir][tags-elixir], React, Webpack
 
 ### ObserverLive
 
@@ -72,7 +72,7 @@ using Phoenix's [LiveView](https://github.com/phoenixframework/phoenix_live_view
 
 Read more about it [here](/posts/observer-live)
 
-Tech: Elixir, Phoenix, LiveView
+Tech: [Elixir][tags-elixir], [Phoenix][tags-phoenix], [LiveView][tags-liveview]
 
 ### Sourcery-ci
 
@@ -81,7 +81,7 @@ Link: https://sourcery-ci.org
 An app which checks whether an open-source repository conforms to
 several release conventions.
 
-Tech: Elixir, Phoenix, WebSockets, PostgreSQL
+Tech: [Elixir][tags-elixir], [Phoenix][tags-phoenix], [WebSockets][tags-websockets], PostgreSQL
 
 ### Opus
 
@@ -89,7 +89,7 @@ Link: https://github.com/zorbash/opus
 
 A library for pluggable business logic components in Elixir.
 
-Tech: Elixir
+Tech: [Elixir][tags-elixir]
 
 ### ExSchedule
 
@@ -97,7 +97,7 @@ Link: https://github.com/quiqupltd/ex_schedule
 
 A library to run recurring jobs in Elixir.
 
-Tech: Elixir
+Tech: [Elixir][tags-elixir]
 
 ### Libelection
 
@@ -107,7 +107,15 @@ Link: https://github.com/quiqupltd/libelection
 
 Library to perform leader election in a cluster of containerized Elixir nodes.
 
-Tech: Elixir
+Tech: [Elixir][tags-elixir]
+
+### sidekiq-dry
+
+Link: https://github.com/zorbash/sidekiq-dry
+
+Blog post: ["sidekiq-dry"]({{< relref "post/sidekiq-dry.md" >}})
+
+Tech: [Ruby][tags-ruby]
 
 ### Bookworm 🪱📚
 
@@ -118,14 +126,26 @@ It also syncs highlights to Notion.
 
 Check out: https://github.com/zorbash/notes for my notes generated using this tool.
 
-Tech: Ruby
+Blog posts: 
+
+* ["Organising Book Highlights and Notes"]({{< relref "post/highlights-notes.md" >}})
+* [""Building an Unusual Pomodoro Timer on Elixir and Nerves"]({{< relref "post/nerves-second-brain.md" >}})
+
+Tech: [Ruby][tags-ruby]
 
 ### Recyclops (WIP)
 
 I'm building a smart recycling bin (hello 👋 [@internetofshit](https://twitter.com/internetofshit)) which detects recycling labels and
 only lets you dispose items only when they're really recyclable.
 
-Tech: Elixir, Nerves, Raspberry PI, Camera
+Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][raspberry-pi], Camera
+
+[tags-elixir]: {{< relref "tags/elixir" >}}
+[tags-phoenix]: {{< relref "tags/phoenix" >}}
+[tags-websockets]: {{< relref "tags/websockets" >}}
+[tags-liveview]: {{< relref "tags/live-view" >}}
+[tags-ruby]: {{< relref "tags/ruby" >}}
+[tags-raspberry]: {{< relref "tags/raspberry-pi" >}}
 
 <style>
   img.observer_live {
