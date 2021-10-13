@@ -129,7 +129,7 @@ Check out: https://github.com/zorbash/notes for my notes generated using this to
 Blog posts: 
 
 * ["Organising Book Highlights and Notes"]({{< relref "post/highlights-notes.md" >}})
-* [""Building an Unusual Pomodoro Timer on Elixir and Nerves"]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})
+* ["Building an Unusual Pomodoro Timer on Elixir and Nerves"]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})
 
 Tech: [Ruby][tags-ruby]
 
