@@ -67,7 +67,7 @@ What's great about this database is that it can be embedded as a view in
 any page.
 
 <figure>
-  <img src="/images/posts/highlights_notes/notion_database.png" class="img-medium" alt="notion database">
+  <img src="/images/posts/highlights_notes/notion_database.webp" class="img-medium" alt="notion database">
   <figcaption>
   Quick search from any page
   </figcaption>
