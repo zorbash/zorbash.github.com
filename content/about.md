@@ -138,7 +138,7 @@ Tech: [Ruby][tags-ruby]
 I'm building a smart recycling bin (hello 👋 [@internetofshit](https://twitter.com/internetofshit)) which detects recycling labels and
 only lets you dispose items only when they're really recyclable.
 
-Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][raspberry-pi], Camera
+Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][tags-raspberry], Camera
 
 [tags-elixir]: {{< relref "tags/elixir" >}}
 [tags-phoenix]: {{< relref "tags/phoenix" >}}
@@ -146,6 +146,7 @@ Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][raspberry-pi]
 [tags-liveview]: {{< relref "tags/live-view" >}}
 [tags-ruby]: {{< relref "tags/ruby" >}}
 [tags-raspberry]: {{< relref "tags/raspberry-pi" >}}
+[tags-nerves]: {{< relref "tags/nerves" >}}
 
 <style>
   img.observer_live {
