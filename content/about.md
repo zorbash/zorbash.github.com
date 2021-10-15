@@ -126,7 +126,7 @@ It also syncs highlights to Notion.
 
 Check out: https://github.com/zorbash/notes for my notes generated using this tool.
 
-Blog posts: 
+Blog posts:
 
 * ["Organising Book Highlights and Notes"]({{< relref "post/highlights-notes.md" >}})
 * ["Building an Unusual Pomodoro Timer on Elixir and Nerves"]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})

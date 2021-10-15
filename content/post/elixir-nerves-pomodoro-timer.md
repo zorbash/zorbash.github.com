@@ -68,7 +68,7 @@ The combination this name and Elixir's fault tolerance reminds me [this][brain-f
 
 **Display the week number**
 
-I tend to make daily plans and thinking in terms of numbered weeks
+I tend to make daily plans and thinking in terms of numbered weeks, it
 drives me to make them memorable.
 
 **Display the temperature outside**
