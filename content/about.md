@@ -113,6 +113,8 @@ Tech: [Elixir][tags-elixir]
 
 Link: https://github.com/zorbash/sidekiq-dry
 
+A Sidekiq middleware to serialize [dry-struct][dry-struct] job arguments.
+
 Blog post: ["sidekiq-dry"]({{< relref "post/sidekiq-dry.md" >}})
 
 Tech: [Ruby][tags-ruby]
@@ -133,6 +135,16 @@ Blog posts:
 
 Tech: [Ruby][tags-ruby]
 
+### Brain 🧠
+
+A smart pomodoro timer with an E Ink screen built with Elixir and Nerves.
+
+Blog posts:
+
+* ["Building an Unusual Pomodoro Timer on Elixir and Nerves"]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})
+
+Tech: [Elixir][tags-Elixir], [Nerves][tags-nerves], [Raspberry Pi][tags-raspberry]
+
 ### Recyclops (WIP)
 
 I'm building a smart recycling bin (hello 👋 [@internetofshit](https://twitter.com/internetofshit)) which detects recycling labels and
@@ -147,6 +159,7 @@ Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][tags-raspberr
 [tags-ruby]: {{< relref "tags/ruby" >}}
 [tags-raspberry]: {{< relref "tags/raspberry-pi" >}}
 [tags-nerves]: {{< relref "tags/nerves" >}}
+[dry-struct]: https://dry-rb.org/gems/dry-struct/master/
 
 <style>
   img.observer_live {
