@@ -16,7 +16,7 @@ I wrote:
 > "Some day I may build a gadget for my desk to display a daily quote".
 
 A few days later, it's on my desk and it couldn't have been a better
-pretext to give [Livebook][livebook-repo] on [Nerves][nerves] a try.
+pretext to give [Livebook][livebook] on [Nerves][nerves] a try.
 
 <!--more-->
 
@@ -290,6 +290,7 @@ and [@lawik][lawik] and all of the contributors to this amazing part of the Elix
 [notion-share]: https://zorbash.notion.site/6bfc231028bd4b71b3a8f4854e31c083?v=5a57cd6e61fd4e7fb2dcaebf335e1da6
 [pomodoro]: https://en.wikipedia.org/wiki/Pomodoro_Technique
 [highlights-notes]: {{< relref "post/highlights-notes.md" >}}
+[livebook]: https://livebook.dev
 [livebook-repo]: https://github.com/livebook-dev/livebook
 [nerves]: https://www.nerves-project.org/
 [pisugar]: https://www.amazon.co.uk/Pisugar2-Portable-Lithium-Raspberry-Accessories/dp/B08D678XPR
