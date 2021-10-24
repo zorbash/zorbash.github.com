@@ -304,7 +304,7 @@ Kino.DataTable.new(notes)
 
 [Reactive inputs][reactive-inputs] make this possible.
 
-<video controls width="600">
+<video controls>
   <source src="/images/posts/elixir_nerves_pomodoro/brain.webm"
           type="video/webm">
 </video>
@@ -373,5 +373,15 @@ and [@lawik][lawik] and all of the contributors to this amazing part of the Elix
 
 .post img.scenic-preview {
   height: 300px;
+}
+
+video {
+  max-width: 1000px;
+}
+
+@media only screen and (max-width: 900px) {
+  video {
+    width: 90%;
+  }
 }
 </style>
