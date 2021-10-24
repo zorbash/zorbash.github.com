@@ -20,17 +20,19 @@ pretext to give [Livebook][livebook] on [Nerves][nerves] a try.
 
 <!--more-->
 
-## Finished Product _..ish_
+## Finished Product
 
-Don't mind the cardboard case, I'm making a proper one as I type this.
+<br/>
 
 <figure>
-  <img src="/images/posts/elixir_nerves_pomodoro/brain.webp" class="img-medium" alt="actual image of Brain" />
+  <img src="/images/posts/elixir_nerves_pomodoro/live_brain.webp" class="img-medium" alt="actual image of Brain" />
 
   <figcaption>
   It's alive! 🧟
   </figcaption>
 </figure>
+
+The case **is not** made of flesh, but working with clay is not my forte. I should buy a 3D printer at some point..
 
 ## Goal
 
@@ -269,6 +271,44 @@ Scenic's text wrapping could support `break-word`, see [scenic#118][scenic-text-
   to show only notes from the `computer science bookshelf` between 10
   and 11 AM and from `philosophy` between 6 and 7 PM.
 
+## Livebook
+
+Livebook is an incredible piece of technology, improving at a mind-blowing
+rate.
+
+A couple of months ago I started work on an enhancement to be
+able to show the documentation for any module / function in a notebook.
+My intention was to expose a `Livedoc.render(:plug)` to fetch and
+render the documentation of the given hex package.
+
+Thankfully, I was surprised to find out that this has already been
+implemented in [livebook#453][livebook-docs-pr] 🙌.
+
+If you haven't tried Livebook yet, please check out [livebook.dev][livebook-dev].
+You can even [configure][livebook-configure] the default Livebook location where notebooks
+will open. I've set mine to `http://nerves.local` where Brain lives.
+
+With your notes loaded in Brain, you can quickly browse and search them with the following notebook:
+
+```elixir
+# Notes
+
+<!-- livebook:{"livebook_object":"cell_input","name":"search","reactive":true,"type":"text","value":""} -->
+
+```elixir
+query = IO.gets("search: ") |> String.trim()
+notes = NervesLivebook.Notes.all() |> Enum.filter(&String.contains?(&1.text, query))
+
+Kino.DataTable.new(notes)
+```
+
+[Reactive inputs][reactive-inputs] make this possible.
+
+<video controls width="600">
+  <source src="/images/posts/elixir_nerves_pomodoro/brain.webm"
+          type="video/webm">
+</video>
+
 ## Acknowledgements
 
 This project wouldn't be as enjoyable and painless without [nerves][nerves],
@@ -308,6 +348,11 @@ and [@lawik][lawik] and all of the contributors to this amazing part of the Elix
 [lawik]: https://github.com/lawik
 [boydm]: https://github.com/boydm
 [toolshed]: https://github.com/elixir-toolshed/toolshed
+[livebook-docs-pr]: https://github.com/livebook-dev/livebook/pull/453
+[livebook-dev]: https://livebook.dev/
+[livebook-configure]: https://livebook.dev/settings
+[livesearch]: https://gist.githubusercontent.com/zorbash/e5fc445aae78e513f365ff1554341d31/raw/25756ec9f13eaaa0bcdab62217e80f8187f47cef/notes.livemd
+[reactive-inputs]: https://github.com/livebook-dev/livebook/pull/389
 
 <style>
 .main-header {
