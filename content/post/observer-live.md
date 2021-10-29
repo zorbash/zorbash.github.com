@@ -17,7 +17,7 @@ rendering way of doing things. I have to say that I'm really impressed 🙂.
 
 You can try the demo yourself [here][demo].
 
-Or.. see this gif.
+Or.. check out this gif.
 
 <img src="/images/posts/observer_live/observer_live.gif" class="img-observer" alt="ravioli">
 

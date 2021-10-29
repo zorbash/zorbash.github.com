@@ -45,11 +45,11 @@ Link: https://tefter.io
 
 Privacy-focused social bookmarking service.
 
-Tech: Ruby, Rails, Elixir, React, PostgreSQL, ElasticSearch, Redis
+Tech: [Ruby][tags-ruby], [Rails][tags-rails], [Elixir][tags-elixir], React, PostgreSQL, ElasticSearch, Redis
 
 #### Press
 
-* [interview (in greek) - epixeiro.gr](http://www.epixeiro.gr/article/130218)
+* [Interview (in greek) - epixeiro.gr](http://www.epixeiro.gr/article/130218)
 
 ### Kitto
 
@@ -58,6 +58,10 @@ Tech: Ruby, Rails, Elixir, React, PostgreSQL, ElasticSearch, Redis
 Link: https://github.com/kittoframework/kitto
 
 A framework to build interactive dashboards.
+
+Featured in:
+
+* [Elixir Digest#70](https://elixirdigest.net/digests/70)
 
 Tech: [Elixir][tags-elixir], React, Webpack
 
@@ -70,7 +74,13 @@ Link: https://liveview.zorbash.com
 A port of [observer_cli](https://github.com/zhongwencool/observer_cli)
 using Phoenix's [LiveView](https://github.com/phoenixframework/phoenix_live_view)
 
-Read more about it [here](/posts/observer-live)
+Blog posts:
+
+* [observer-live][posts-observer-live]
+
+Featured In:
+
+* [Elixir Mix#54](https://elixirmix.com/54)
 
 Tech: [Elixir][tags-elixir], [Phoenix][tags-phoenix], [LiveView][tags-liveview]
 
@@ -88,6 +98,12 @@ Tech: [Elixir][tags-elixir], [Phoenix][tags-phoenix], [WebSockets][tags-websocke
 Link: https://github.com/zorbash/opus
 
 A library for pluggable business logic components in Elixir.
+
+Blog posts:
+
+* [How to create beautiful pipelines on Elixir with Opus - Quiqup Engineering](https://medium.com/quiqup-engineering/how-to-create-beautiful-pipelines-on-elixir-with-opus-f0b688de8994)
+* [How I Centralized our Scattered Business Logic Into One Clear Pipeline for our Elixir Webhook Service - Pagerduty](https://www.pagerduty.com/eng/elixir-webhook-service/)
+* [A Slack bookmarking application in Elixir with Opus][posts-bookmarks-collaboration]
 
 Tech: [Elixir][tags-elixir]
 
@@ -115,7 +131,9 @@ Link: https://github.com/zorbash/sidekiq-dry
 
 A Sidekiq middleware to serialize [dry-struct][dry-struct] job arguments.
 
-Blog post: ["sidekiq-dry"]({{< relref "post/sidekiq-dry.md" >}})
+Blog posts:
+
+* [sidekiq-dry]({{< relref "post/sidekiq-dry.md" >}})
 
 Tech: [Ruby][tags-ruby]
 
@@ -130,8 +148,8 @@ Check out: https://github.com/zorbash/notes for my notes generated using this to
 
 Blog posts:
 
-* ["Organising Book Highlights and Notes"]({{< relref "post/highlights-notes.md" >}})
-* ["Building an Unusual Pomodoro Timer on Elixir and Nerves"]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})
+* [Organising Book Highlights and Notes]({{< relref "post/highlights-notes.md" >}})
+* [Building an Unusual Pomodoro Timer on Elixir and Nerves]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})
 
 Tech: [Ruby][tags-ruby]
 
@@ -141,7 +159,11 @@ A smart pomodoro timer with an E Ink screen built with Elixir and Nerves.
 
 Blog posts:
 
-* ["Building an Unusual Pomodoro Timer on Elixir and Nerves"]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})
+* [Building an Unusual Pomodoro Timer on Elixir and Nerves]({{< relref "post/elixir-nerves-pomodoro-timer.md" >}})
+
+Featured In:
+
+* [Elixir Weekly#311][elixirweekly-311]
 
 Tech: [Elixir][tags-Elixir], [Nerves][tags-nerves], [Raspberry Pi][tags-raspberry]
 
@@ -160,6 +182,9 @@ Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][tags-raspberr
 [tags-raspberry]: {{< relref "tags/raspberry-pi" >}}
 [tags-nerves]: {{< relref "tags/nerves" >}}
 [dry-struct]: https://dry-rb.org/gems/dry-struct/master/
+[elixirweekly-311]: https://sendy.elixir-radar.com/w/Acxn1MQ763LbtJAUE4mVlIqQ/J8921cxQ4jeEDmbVKDWh02aw/LDm8bUHockfgZPxjvskA892Q
+[posts-observer-live]: {{< relref "post/observer-live" >}}
+[posts-slack_bookmarks_collaboration_elixir]: {{< relref "post/slack-bookmarks-collaboration-elixir" >}}
 
 <style>
   img.observer_live {
