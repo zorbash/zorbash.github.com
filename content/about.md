@@ -164,6 +164,7 @@ Blog posts:
 Featured In:
 
 * [Elixir Weekly#311][elixirweekly-311]
+* [Elixir Digest#331][elixirdigest-331]
 
 Tech: [Elixir][tags-Elixir], [Nerves][tags-nerves], [Raspberry Pi][tags-raspberry]
 
@@ -183,6 +184,7 @@ Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][tags-raspberr
 [tags-nerves]: {{< relref "tags/nerves" >}}
 [dry-struct]: https://dry-rb.org/gems/dry-struct/master/
 [elixirweekly-311]: https://sendy.elixir-radar.com/w/Acxn1MQ763LbtJAUE4mVlIqQ/J8921cxQ4jeEDmbVKDWh02aw/LDm8bUHockfgZPxjvskA892Q
+[elixirdigest-331]: https://elixirdigest.net/digests/331
 [posts-observer-live]: {{< relref "post/observer-live" >}}
 [posts-slack_bookmarks_collaboration_elixir]: {{< relref "post/slack-bookmarks-collaboration-elixir" >}}
 
