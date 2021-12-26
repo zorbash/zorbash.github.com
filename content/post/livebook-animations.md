@@ -10,7 +10,7 @@ share = true
 +++
 
 
-A new exciting feature landed in [Livebook][livebook-repo] (through [Kino][kino]) which gives
+An exciting new feature landed in [Livebook][livebook-repo] (through [Kino][kino]) which gives
 the ability to animate any output.
 
 <!--more-->
@@ -27,6 +27,7 @@ Kino.Image.new(Picam.next_frame, :jpeg)
 ```
 
 but it creates a new output cell every time `Kino.render/1` is called.
+
 So I posted this issue ([kino#48][kino-issue]) and implemented a new
 widget `Kino.ImageDynamic` which can be updated with
 `Kino.ImageDynamic.push/2`.
@@ -80,7 +81,7 @@ end)
 
 ### Life
 
-Lets put this new API to the test by implementing [Life][life].
+Let's put this new API to the test by implementing [Life][life].
 To try this on your Livebook instance by importing [this notebook][life-notebook].
 
 The implemenation is based on this [gist][sasa-life].
@@ -211,8 +212,7 @@ loop.(loop)
 Buttons are a new addition to Kino and Livebook released in version 0.4.0.
 You can find their docs [here][button-docs].
 
-Having made sure that we can correctly render a grid, let's animate it.
-
+Having made sure that we can correctly render a grid, we can finally animate it.
 
 ```elixir
 Kino.animate(100, Life.Grid.new(randomize.(25)), fn grid ->
@@ -225,6 +225,8 @@ end)
           type="video/mp4">
 </video>
 
+Thanks for reading this post, hope you'll find it useful and make
+your notebooks pop with captivating animations.
 
 [livebook-repo]: https://github.com/livebook-dev/livebook
 [livebook-dev]: https://livebook.dev/
