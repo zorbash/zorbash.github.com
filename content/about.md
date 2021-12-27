@@ -165,6 +165,7 @@ Featured In:
 
 * [Elixir Weekly#311][elixirweekly-311]
 * [Elixir Digest#331][elixirdigest-331]
+* [Elixir Mix][elixir-mix-brain]
 
 Tech: [Elixir][tags-Elixir], [Nerves][tags-nerves], [Raspberry Pi][tags-raspberry]
 
@@ -187,6 +188,8 @@ Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][tags-raspberr
 [elixirdigest-331]: https://elixirdigest.net/digests/331
 [posts-observer-live]: {{< relref "post/observer-live" >}}
 [posts-slack_bookmarks_collaboration_elixir]: {{< relref "post/slack-bookmarks-collaboration-elixir" >}}
+[elixir-mix-brain]: https://elixirmix.com/personal-brain-with-nerves-and-livebook-dimitri-zorbas
+
 
 <style>
   img.observer_live {
