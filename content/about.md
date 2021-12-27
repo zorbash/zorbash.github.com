@@ -103,7 +103,7 @@ Blog posts:
 
 * [How to create beautiful pipelines on Elixir with Opus - Quiqup Engineering](https://medium.com/quiqup-engineering/how-to-create-beautiful-pipelines-on-elixir-with-opus-f0b688de8994)
 * [How I Centralized our Scattered Business Logic Into One Clear Pipeline for our Elixir Webhook Service - Pagerduty](https://www.pagerduty.com/eng/elixir-webhook-service/)
-* [A Slack bookmarking application in Elixir with Opus][posts-bookmarks-collaboration]
+* [A Slack bookmarking application in Elixir with Opus][posts-slack_bookmarks_collaboration_elixir]
 
 Tech: [Elixir][tags-elixir]
 
@@ -163,9 +163,9 @@ Blog posts:
 
 Featured In:
 
+* [Elixir Mix][elixir-mix-brain]
 * [Elixir Weekly#311][elixirweekly-311]
 * [Elixir Digest#331][elixirdigest-331]
-* [Elixir Mix][elixir-mix-brain]
 
 Tech: [Elixir][tags-Elixir], [Nerves][tags-nerves], [Raspberry Pi][tags-raspberry]
 
@@ -181,6 +181,7 @@ Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][tags-raspberr
 [tags-websockets]: {{< relref "tags/websockets" >}}
 [tags-liveview]: {{< relref "tags/live-view" >}}
 [tags-ruby]: {{< relref "tags/ruby" >}}
+[tags-rails]: {{< relref "tags/rails" >}}
 [tags-raspberry]: {{< relref "tags/raspberry-pi" >}}
 [tags-nerves]: {{< relref "tags/nerves" >}}
 [dry-struct]: https://dry-rb.org/gems/dry-struct/master/
