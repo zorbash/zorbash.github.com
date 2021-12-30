@@ -225,6 +225,10 @@ end)
           type="video/mp4">
 </video>
 
+#### Other Implementations
+
+See: https://twitter.com/josevalim/status/1476292540999647233
+
 Thanks for reading this post, hope you'll find it useful and make
 your notebooks pop with captivating animations.
 
