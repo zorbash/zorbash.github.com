@@ -23,6 +23,10 @@
     <meta property="og:image" content="{{.Site.BaseURL}}{{ .Params.image }}" />
 
     {{ if .IsPage }}
+      {{ if .Params.canonicalUrl }}
+        <link rel="canonical" href="{{ .Params.canonicalUrl }}">
+      {{ end }}
+
     <meta property="og:type" content="article" />
 
     <meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
