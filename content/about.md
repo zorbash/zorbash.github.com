@@ -169,6 +169,22 @@ Featured In:
 
 Tech: [Elixir][tags-Elixir], [Nerves][tags-nerves], [Raspberry Pi][tags-raspberry]
 
+### Mix Changelog
+
+A mix task to retrieve changelog entries for Hex dependencies which can be updated.
+
+Source: [github.com/zorbash/changelog](https://github.com/zorbash/changelog)
+
+Blog posts:
+
+* [Easier and Safer Hex Package Updates]({{< relref "post/safer-package-updates.md" >}})
+
+Featured In:
+
+* [Elixir Radar #300][elixir-radar-300]
+
+Tech: [Elixir][tags-Elixir]
+
 ### Recyclops (WIP)
 
 I'm building a smart recycling bin (hello 👋 [@internetofshit](https://twitter.com/internetofshit)) which detects recycling labels and
@@ -190,6 +206,7 @@ Tech: [Elixir][tags-elixir], [Nerves][tags-nerves], [Raspberry PI][tags-raspberr
 [posts-observer-live]: {{< relref "post/observer-live" >}}
 [posts-slack_bookmarks_collaboration_elixir]: {{< relref "post/slack-bookmarks-collaboration-elixir" >}}
 [elixir-mix-brain]: https://elixirmix.com/personal-brain-with-nerves-and-livebook-dimitri-zorbas
+[elixir-radar-300]: https://sendy.elixir-radar.com/w/45UER763MEEYUnSXewKQuT8Q/J8921cxQ4jeEDmbVKDWh02aw/zO2HxML8924xvgoWO8MbJ7eQ
 
 
 <style>
