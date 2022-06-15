@@ -177,7 +177,7 @@ Source: [github.com/zorbash/changelog](https://github.com/zorbash/changelog)
 
 Blog posts:
 
-* [Easier and Safer Hex Package Updates]({{< relref "post/safer-package-updates.md" >}})
+* [Easier and Safer Hex Package Updates]({{< relref "post/safer-elixir-package-upgrades.md" >}})
 
 Featured In:
 
