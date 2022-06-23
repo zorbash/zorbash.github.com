@@ -129,6 +129,20 @@ hr {
     border-top: #9EABB3 1px solid;
 }
 
+details p {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+details[open] summary {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+summary {
+  display: list-item;
+}
+
 .avatar {
   height: 80px;
   float: right;
