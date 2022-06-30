@@ -248,7 +248,7 @@ Notes (copied from the final slide):
 Working with Airline XML APIs that are allegedly impossible to cache seems
 very challenging.
 
-They picked GCP PubSub becaused it ticked the following boxes:
+They picked GCP PubSub because it ticked the following boxes:
 
 * Topics
 * Subscriptions
@@ -261,7 +261,7 @@ They picked GCP PubSub becaused it ticked the following boxes:
 
 She also mentioned an issue they faced with [Broadway][broadway] and
 long-lived worker processes where memory wasn't being garbage collected.
-_I think_ they solved it by hiberneting the processes.
+_I think_ they solved it by hibernating the processes.
 
 ### Micro-Services and Events: Friends of Foes? - [Roland Tritsch][profile-roland]
 
@@ -285,7 +285,7 @@ Lessons Learned:
 He spoke about [TypeCheck](https://github.com/Qqwy/elixir-type_check) a
 library for runtime type-checks.
 
-He highlighted some of the common _similar_ tools like Dialyzer and Gradualizer.
+He highlighted some of the common _similar_ tools like [Dialyzer][dialyzer] and [Gradualizer][gradualizer].
 
 Pros:
   * Checks (using the typespecs) for common mistakes
@@ -297,18 +297,16 @@ Cons:
   * Slow to run, difficult to understand errors
   * Opt-in
 
-Gradualizer: Promising, but experimental
+[Gradualizer][gradualizer]: Promising, but experimental
 
 His future plans for this library are:
 
-* Stable release (nearly therel)
-* Companion librarles
-  - type everrides for common Illas
+* Stable release (nearly there)
+* Companion libraries
+  - type overrides for common libs
     (Phoenix, Ecto, Jason, Decimal, Absinthe, etc)
 * Improve efficiency
-* Support PropEr as well (as Streamdata)
-
-### TypeCheck - Effortless Runtime Type-Checking [Marten (W-M) Wijnja / Qqwy][profile-wijnja]
+* Support [PropEr][proper] as well (as [StreamData][streamdata])
 
 ## Outro
 
@@ -351,3 +349,7 @@ Please contact me on [twitter][me-twitter], or in the comments, or [submit a PR]
 [profile-roland]: https://tedn.life/
 [profile-wijnja]: https://wmcode.nl/
 [me-twitter]: https://twitter.com/_zorbash
+[proper]: https://github.com/proper-testing/proper
+[streamdata]: https://github.com/whatyouhide/stream_data
+[gradualizer]: https://github.com/josefs/Gradualizer
+[dialyzer]: https://www.erlang.org/doc/man/dialyzer.html
