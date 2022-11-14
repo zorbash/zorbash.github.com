@@ -40,7 +40,7 @@ What if your diagrams are not part-fish? No problem, there's [kino_kroki][kino_k
 
 You quickly can give it a go by following the link below:  
 
-[![Livebook badge](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fhexdocs.pm%2Fkino_kroki%2Fexamples.livemd)
+[![Livebook badge](/images/livebook.svg)](https://livebook.dev/run?url=https%3A%2F%2Fhexdocs.pm%2Fkino_kroki%2Fexamples.livemd)
 
 _Note: Please mind that you need to be running Livebook > 0.6_
 
@@ -141,7 +141,7 @@ according to the selected type.
 
 * With the `init/2` callback, that receives the argument and the "server"
 context, we initialise the type, setting it to "graphviz" and we also
-fetch and assign a sample textual definition of a GraphViz diagram. More
+fetch and assign a sample textual definition of a [GraphViz][graphviz] diagram. More
 details about the module returning samples will be available further below.
 
 ```elixir
@@ -443,7 +443,9 @@ help you discover notebooks contributed by the community.
 
 Please contact me on [twitter][me-twitter], or in the comments, or [submit a PR][blog-repo] for corrections.
 
-
+[graphviz]: https://graphviz.org/
+[me-twitter]: https://twitter.com/_zorbash
+[blog-repo]: https://github.com/zorbash/zorbash.github.com
 [kroki]: https://kroki.io
 [livebook]: https://livebook.dev
 [ex_doc]: https://github.com/elixir-lang/ex_doc/
