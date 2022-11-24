@@ -1,6 +1,6 @@
 +++
 author = "Dimitris Zorbas"
-date = "2022-06-14"
+date = "2022-11-14"
 draft = false
 title = "A Livebook Smart-Cell to Render Diagrams"
 image = "/images/posts/kino_kroki/banner.svg"
@@ -132,8 +132,8 @@ end
 ```
 
 We're defining a module for the smart-cell, which adds `Kino.JS` making
-the module assert-aware allowing us to inject JavaScript for our cell
-through the `assert "main.js"` macro as well as CSS through `asset "main.css"`.
+the module asset-aware allowing us to inject JavaScript for our cell
+through the `asset "main.js"` macro as well as CSS through `asset "main.css"`.
 
 We also use [`Kino.JS.Live`][docs-kinojslive] since we want the cell to be dynamic,
 listening to the `update_type` event then setting a diagram sample
